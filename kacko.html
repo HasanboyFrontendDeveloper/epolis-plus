@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./icons/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpolisPlus - kacko</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar__left">
+            <a href="./" class="navbar__logo">
+                <img src="./icons/logo.svg" alt="logo">
+                <h4>Epolis<span>Plus</span></h4>
+            </a>
+
+            <ul class="navbar__links">
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/shield-chevron.svg" alt="shield">
+                        <h3 class="text-semi-base">Гарантийный код</h3>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/calculator.svg" alt="shield">
+                        <h3 class="text-semi-base">Калькулятор полисов</h3>
+                    </a>
+                </li>
+                <li class="dropdown ">
+                    <button class=" navbar__link btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="./icons/briefcase.svg" alt="shield">
+                        <h3 class="text-semi-base">О компании</h3>
+                    </button>
+
+
+                    <ul class="dropdown-menu navbar__lists box-shadow-sm " style="min-width: auto;">
+                        <li class="" style="min-width: auto; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                О нас
+                            </button>
+                        </li>
+                        <li class="" style="min-width: max-content; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                Как стать партнером
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="navbar__right">
+
+            <div class="dropdown">
+                <button class="selected__lng  btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="./icons/russia.svg" alt="ru">
+                    <span class="text-semi-sm">RU</span>
+                    <img src="./icons/chevron-down.svg" alt="chevron">
+                </button>
+
+
+                <ul class="dropdown-menu language__lists box-shadow-sm " style="min-width: auto; max-width: 88px; ">
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class=" dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/uzbekistán.svg" alt="ru">
+                            <span class="text-semi-sm">UZ</span>
+                        </button>
+                    </li>
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class="dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/united kingdom.svg" alt="ru">
+                            <span class="text-semi-sm">EN</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class=" navbar__right-button text-semi-sm box-shadow-sm ">
+                <img src="./icons/phone-call.svg" alt="phone">
+                Экстренный вызов
+            </button>
+            <a href="#" class="navbar__singIn box-shadow-sm text-reg-sm ">
+                <img src="./icons/user-square.svg" alt="user">
+                Войти
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="kacko">
+        <form>
+            <h4 class="text-semi-xl mb-3 ">Данные о ТС</h4>
+            <div class="">
+                <label class="text-reg-sm">
+                    Гос номер <span class="input_important">*</span> <br>
+                    <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 " style="width: 309px;"
+                        placeholder="01A001AA">
+                    <h6 class="text-reg-xs m-0  ">Заполните поле</h6>
+                </label>
+                <label class="text-reg-sm">
+                    Серия и номер тех. паспорта <span class="input_important">*</span> <br>
+                    <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 "
+                        style="width: 64px; margin-right: 4px; " placeholder="AAF">
+                    <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 mr-1 "
+                        style="width: 237px;" placeholder="0000000">
+                </label>
+                <button type="submit" class="button-primary button-sm text-semi-base ">
+                    <img src="./icons/search.svg" alt="search">
+                    Поиск
+                </button>
+                <!-- <button type="submit" class="button-primary button-sm d-flex align-items-center gap-2 text-semi-base ">
+                    <img src="./icons/search.svg" alt="search">
+                    Поиск
+                </button> -->
+            </div>
+            <div class=""></div>
+        </form>
+    </section>
+
+    <section class="kacko-data">
+        <div class="kacko-data__item">
+            <h2 class="mb-3 text-semi-xl ">Ваши данные</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Полное имя:</h5>
+                    <h3 class="text-reg-base m-0 ">QO‘CHQOROV KOMOLJON MUXAMADJON O‘G‘LI</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Паспорт / ID карта:</h5>
+                    <h3 class="text-reg-base m-0 ">AB 0000001</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Номер телефона:</h5>
+                    <h3 class="text-reg-base m-0 ">+998(93)556-1293</h3>
+                </div>
+            </div>
+        </div>
+        <div class="kacko-data__item">
+            <h2 class="mb-3 text-semi-xl ">Информация о транспортном средстве</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Тип, марка и модель ТС:</h5>
+                    <h3 class="text-reg-base m-0 ">SPARK</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Государственный <br> регистрационный номер:</h5>
+                    <h3 class="text-reg-base m-0 ">01A001AA</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Технический паспорт:</h5>
+                    <h3 class="text-reg-base m-0 ">AAF 15000018</h3>
+                </div>
+            </div>
+        </div>
+        <div class="kacko-data__item">
+            <h2 class="mb-3 text-semi-xl ">Подтверждение информации</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Подписка оформляется на следующие к тарифам:</h5>
+                    <h3 class="text-reg-base m-0 ">SIMPLE</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Общая сумма подписки:</h5>
+                    <h3 class="text-reg-base m-0 ">150 000 сум</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Общий лимит возмещения:</h5>
+                    <h3 class="text-reg-base m-0 ">3 000 000 сум</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="data_navigation d-flex justify-content-between ">
+            <button class="data_prev d-flex gap-2 button-md align-items-center text-hover">
+                <img src="./icons/arrow-left-green.svg" alt="arrow-left" width="20px" height="20px">
+                <h4 class="text-semi-base m-0 ">Изменить данные</h4>
+            </button>
+            <button class="data_next button-primary button-md ">
+                Перейти к оплате
+                <img src="./icons/arrow-right-white.svg" alt="arrow-right">
+            </button>
+        </div>
+    </section>
+
+    <section class="kacko-payment">
+
+        <div class="kacko-data__item">
+            <h2 class="mb-3 text-semi-xl ">Оплата</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Номер заказа</h5>
+                    <h3 class="text-reg-base m-0 ">236950</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Ф.И.О</h5>
+                    <h3 class="text-reg-base m-0 ">QO‘CHQOROV KOMOLJON MUXAMADJON O‘G‘LI</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Телефон</h5>
+                    <h3 class="text-reg-base m-0 ">+998(93)556-1293</h3>
+                </div>
+                <div class="data-table-row price ">
+                    <h5 class="text-reg-sm mb-2 ">Стоимость полиса</h5>
+                    <div class="price__item">
+                        <img src="./icons/coins.svg" alt="coin">
+                        <h4 class="text-semi-2xl m-0">250 000 сум</h4>
+                    </div>
+                </div>
+                <div class="data-table-row d-block ">
+                    <h5 class="text-reg-sm m-0 ">Выберите способ оплаты</h5>
+                    <div class="payment_method">
+                        <div class="payment_method__item ">
+                            <div class="circle box-shadow-sm "> </div>
+                            <img src="./icons/click.svg" alt="click">
+                        </div>
+                        <div class="payment_method__item selected">
+
+                            <div class="circle box-shadow-sm " id="hello" > </div>
+                            <img src="./icons/payme.svg" alt="payme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data_navigation d-flex justify-content-between ">
+            <button class="data_prev d-flex gap-2 button-md align-items-center text-hover">
+                <img src="./icons/arrow-left-green.svg" alt="arrow-left" width="20px" height="20px">
+                <h4 class="text-semi-base m-0 ">Изменить данные</h4>
+            </button>
+            <button class="data_next button-primary button-md ">
+                Перейти к оплате
+                <img src="./icons/arrow-right-white.svg" alt="arrow-right">
+            </button>
+        </div>
+    </section>
+
+
+    <footer class="footer position-relative">
+
+
+        <div class="d-flex justify-content-between align-items-center ">
+            <a href="./">
+                <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
+            </a>
+
+            <div class="apps m-0 ">
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media">
+                <div class="d-flex gap-2 ">
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
+                    </a>
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <button class="button-primary ">
+                    <img src="./icons/phone-check.svg" alt="phone-check" class="">
+                    Позвонить сейчас
+                </button>
+
+            </div>
+        </div>
+
+        <div class=" footer__down d-flex justify-content-between align-items-center ">
+            <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
+
+            <div class="d-flex justify-content-between align-items-center gap-4 ">
+                <p class="text-reg-sm m-0">Политика конфиденциальности</p>
+                <p class="text-reg-sm m-0">Условия обслуживания</p>
+            </div>
+
+            <img src="./icons/footer-image.svg" alt="footer-image">
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

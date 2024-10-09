@@ -23,3 +23,11 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+// Payment Method
+const paymentMethodItem = document.querySelectorAll('.payment_method__item');
+
+
+console.log(paymentMethodItem);
+
