@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./icons/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpolisPlus - kacko</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar__left">
+            <a href="./" class="navbar__logo">
+                <img src="./icons/logo.svg" alt="logo">
+                <h4>Epolis<span>Plus</span></h4>
+            </a>
+
+            <ul class="navbar__links">
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/shield-chevron.svg" alt="shield">
+                        <h3 class="text-semi-base">Гарантийный код</h3>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/calculator.svg" alt="shield">
+                        <h3 class="text-semi-base">Калькулятор полисов</h3>
+                    </a>
+                </li>
+                <li class="dropdown ">
+                    <button class=" navbar__link btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="./icons/briefcase.svg" alt="shield">
+                        <h3 class="text-semi-base">О компании</h3>
+                    </button>
+
+
+                    <ul class="dropdown-menu navbar__lists box-shadow-sm " style="min-width: auto;">
+                        <li class="" style="min-width: auto; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                О нас
+                            </button>
+                        </li>
+                        <li class="" style="min-width: max-content; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                Как стать партнером
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="navbar__right">
+
+            <div class="dropdown">
+                <button class="selected__lng  btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="./icons/russia.svg" alt="ru">
+                    <span class="text-semi-sm">RU</span>
+                    <img src="./icons/chevron-down.svg" alt="chevron">
+                </button>
+
+
+                <ul class="dropdown-menu language__lists box-shadow-sm " style="min-width: auto; max-width: 88px; ">
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class=" dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/uzbekistán.svg" alt="ru">
+                            <span class="text-semi-sm">UZ</span>
+                        </button>
+                    </li>
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class="dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/united kingdom.svg" alt="ru">
+                            <span class="text-semi-sm">EN</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class=" navbar__right-button text-semi-sm box-shadow-sm ">
+                <img src="./icons/phone-call.svg" alt="phone">
+                Экстренный вызов
+            </button>
+            <a href="#" class="navbar__singIn box-shadow-sm text-reg-sm ">
+                <img src="./icons/user-square.svg" alt="user">
+                Войти
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="osago container-lg d-flex gap-4 px-0 mt-5 ">
+
+        <div class="container-mini">
+
+            <h4 class="text-semi-xl mb-3 px-6px ">Данные собственника транспортного средства</h4>
+            <form class="border-bottom-dashed pb-3  ">
+                <div class="row row-gap-3 container-mini ">
+
+                    <div class="col-md-6 col-sm-9 col-8">
+
+                        <label class="text-reg-sm w-100 ">
+                            Серия и номер Паспортa/ID <span class="input_important">*</span> <br>
+                            <div class="d-flex gap-2 ">
+
+                                <div class="">
+                                    <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                        placeholder="AAF" style="width: 64px !important;">
+                                    <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                                </div>
+                                <div class="w-100">
+                                    <input type="text"
+                                        class="form_input w-100 text-reg-base valid box-shadow-sm mt-1 mr-1 "
+                                        placeholder="0000001">
+                                    <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                                </div>
+                            </div>
+
+                        </label>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <label class="text-reg-sm w-100">
+                            ПИНФЛ владельца ТС
+                            <div class="w-100">
+                                <input type="text" class="form_input disabled text-reg-base w-100 box-shadow-sm mt-1 "
+                                    readonly placeholder="8374819283918293">
+                                <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-4  ">
+                        <div class="h-64px">
+                            <button type="submit"
+                                class="button-primary button-sm text-semi-base mt-4 d-flex align-items-center gap-2 w-100 ">
+                                <img src="./icons/search.svg" alt="search">
+                                Поиск
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row row-gap-3 container-mini mt-4 ">
+
+                    <div class="col-md-4 ">
+                        <label class="text-reg-sm text-gray ">Номер телефона</label>
+
+                        <div class="w-100">
+                            <input type="text" class="form_input valid text-reg-base box-shadow-sm mt-1 w-100 "
+                                value="+998 (93) 556-12-93" placeholder="+998XX-XXX-XX-XX">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-start pb-4 mt-2">
+                        <input id="phone_number" class="input_agree" type="checkbox" name="phone_number">
+                        <label for="phone_number" class="fs-7 checkbox-label text-reg-base ">Владелец является
+                            заявителем</label>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="d-flex justify-content-between my-32px mb-3 px-6px ">
+
+                <h4 class="text-semi-xl m-0">Родственник: 1</h4>
+
+                <button class="button-secondary button-sm d-flex gap-2 align-items-center ">
+                    <img src="./icons/trashcan.svg" alt="trashcan">
+                    Удалить
+                </button>
+            </div>
+            <form class="row row-gap-3 container-mini  pb-3 ">
+
+                <div class="col-md-12">
+                    <label class="text-reg-sm text-gray w-100 mb-1 ">
+                        Гражданство <span class="input_important">*</span> <br>
+                    </label>
+
+                    <select class="form-select form_input valid w-100 box-shadow-sm ">
+                        <option selected="" value="">Гражданин УзР</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                    <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-9 col-8">
+
+                    <label class="text-reg-sm w-100 ">
+                        Серия и номер Паспортa/ID <span class="input_important">*</span> <br>
+                        <div class="d-flex gap-2 ">
+
+                            <div class="">
+                                <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                    placeholder="AAF" style="width: 64px !important;">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                            </div>
+                            <div class="w-100">
+                                <input type="text" class="form_input w-100 text-reg-base valid box-shadow-sm mt-1 mr-1 "
+                                    placeholder="0000001">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                            </div>
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="col-md-4 ">
+                    <label class="text-reg-sm w-100">
+                        ПИНФЛ владельца ТС
+                        <div class="w-100">
+                            <input type="text" class="form_input disabled text-reg-base w-100 box-shadow-sm mt-1 "
+                                readonly placeholder="8374819283918293">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-4  ">
+                    <div class="h-64px">
+                        <button type="submit"
+                            class="button-primary button-sm text-semi-base mt-4 d-flex align-items-center gap-2 w-100 ">
+                            <img src="./icons/search.svg" alt="search">
+                            Поиск
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+            <form class="row row-gap-3 container-mini ">
+                <div class="border-bottom-dashed">
+                    <button type="button"
+                        class="button-white button-sm box-shadow-sm border-base d-flex gap-2 align-items-center  ">
+                        <img src="./icons/plus.svg" alt="plus">
+                        Добавить родственника
+                    </button>
+                </div>
+
+                <button type="submit"
+                    class="button-primary button-md mt-3 d-flex gap-2 align-items-center justify-content-center ">
+                    Перейти к осмотру
+                    <img src="./icons/arrow-right-white.svg" alt="arrow-right">
+                </button>
+
+            </form>
+        </div>
+
+        <div class="container-sm p-0 ">
+
+            <div class="">
+                <h2 class="mb-3 text-semi-xl ">Информация об автомобиле:</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Владелец автомобиля</h5>
+                        <h3 class="text-reg-base m-0 ">QO‘CHQOROV KOMOLJON MUXAMADJON O‘G‘LI</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Государственный номер</h5>
+                        <h3 class="text-reg-base m-0 ">01A001AA</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Модель</h5>
+                        <h3 class="text-reg-base m-0 ">SPARK</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Серия и номер тех. паспорта</h5>
+                        <h3 class="text-reg-base m-0 ">AAF 1500718</h3>
+                    </div>
+                    <div class="py-12px pb-0 ">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Регион</h5>
+                        <h3 class="text-reg-base m-0 ">г.Ташкент и Ташкентская область</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h2 class="mb-3 text-semi-xl ">Страховая компания:</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Название</h5>
+                        <h3 class="text-reg-base m-0 ">AO «KAPITAL SUG'URTA»</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Стоимость полиса</h5>
+                        <h3 class="text-reg-base m-0 ">168 000 сум</h3>
+                    </div>
+                    <div class="py-12px pb-0">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Страховая сумма</h5>
+                        <h3 class="text-reg-base m-0 ">40 000 000.00 сўм</h3>
+                    </div>
+                </div>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Период страхования</h5>
+                        <h3 class="text-reg-base m-0 ">1 год</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата начала <span class="input_important">*</span>
+                        </h5>
+                        <input type="date" class="form_input text-reg-base valid box-shadow-sm w-100 "
+                            autocomplete="off">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                    <div class="py-12px pb-0 ">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата окончания <span
+                                class="input_important">*</span>
+                        </h5>
+                        <input type="date" class="form_input text-reg-base disabled box-shadow-sm w-100 " readonly
+                            autocomplete="off">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="container-mini">
+        <div class="my-32px">
+            <h2 class="mb-3 text-semi-xl ">Ваши данные</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Полное имя:</h5>
+                    <h3 class="text-reg-base m-0 ">QO‘CHQOROV KOMOLJON MUXAMADJON O‘G‘LI</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Паспорт / ID карта:</h5>
+                    <h3 class="text-reg-base m-0 ">AB 0000001</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">ПИНФЛ:</h5>
+                    <h3 class="text-reg-base m-0 ">42211650067832</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Номер телефона:</h5>
+                    <h3 class="text-reg-base m-0 ">+998(93)556-1293</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-32px mt-0">
+            <h2 class="mb-3 text-semi-xl ">Владелец транспортного средства</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Полное имя:</h5>
+                    <h3 class="text-reg-base m-0 ">QO‘CHQOROV KOMOLJON MUXAMADJON O‘G‘LI</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Паспорт / ID карта:</h5>
+                    <h3 class="text-reg-base m-0 ">AB 0000001</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Номер телефона:</h5>
+                    <h3 class="text-reg-base m-0 ">+998(93)556-1293</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-32px mt-0">
+            <h2 class="mb-3 text-semi-xl ">Информация о транспортном средстве</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Тип, марка и модель ТС:</h5>
+                    <h3 class="text-reg-base m-0 ">Легковые автомобили , SPARK</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Год изготовления:</h5>
+                    <h3 class="text-reg-base m-0 ">2020</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Государственный <br> регистрационный номер:</h5>
+                    <h3 class="text-reg-base m-0 ">01A001AA</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Номер кузова (шасси) ТС:</h5>
+                    <h3 class="text-reg-base m-0 ">XWBMA8311LA508706</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Номер двигателя ТС:</h5>
+                    <h3 class="text-reg-base m-0 ">B12D211290177HB9X0466</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Технический паспорт:</h5>
+                    <h3 class="text-reg-base m-0 ">AAF 1567118 (28.01.2020)</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-32px mt-0">
+            <h2 class="mb-3 text-semi-xl ">Мои полисы</h2>
+
+            <div class="data-table box-shadow-sm ">
+                <div class="border-base rounded-sm d-flex justify-content-center py-40px ">
+                    <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">ОСГОВТС (ОСАГО):</h5>
+                    <h3 class="text-reg-base m-0 ">168 000 сўм</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Страховая сумма:</h5>
+                    <h3 class="text-reg-base m-0 ">40 000 000 сўм</h3>
+                </div>
+                <div class="data-table-row">
+                    <h5 class="text-reg-sm m-0 ">Период страхования:</h5>
+                    <h3 class="text-reg-base m-0 ">13.07.2024 - 12.07.2025</h3>
+                </div>
+                <div class="data-table-row price ">
+                    <h5 class="text-reg-sm mb-2 ">Стоимость полиса</h5>
+                    <div class="price__item">
+                        <img src="./icons/coins.svg" alt="coin">
+                        <h4 class="text-semi-2xl m-0">168 000 сум</h4>
+                    </div>
+                </div>
+                <div class="data-table-row d-block ">
+                    <h5 class="text-reg-sm m-0 ">Выберите способ оплаты</h5>
+                    <div class="payment_method">
+                        <div class="payment_method__item ">
+                            <div class="circle box-shadow-sm "> </div>
+                            <img src="./icons/click.svg" alt="click">
+                        </div>
+                        <div class="payment_method__item selected">
+
+                            <div class="circle box-shadow-sm " id="hello"> </div>
+                            <img src="./icons/payme.svg" alt="payme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex align-items-center justify-content-start my-32px mt-2">
+            <input id="rememberMe" class="input_agree" type="checkbox" name="rememberMe">
+            <label for="rememberMe" class="fs-7 checkbox-label text-reg-base ">Владелец является
+                заявителем</label>
+        </div>
+
+        <div class="data_navigation d-flex justify-content-between my-32px mt-0 ">
+            <button class="data_prev d-flex gap-2 button-md align-items-center text-hover">
+                <img src="./icons/arrow-left-green.svg" alt="arrow-left" width="20px" height="20px">
+                <h4 class="text-semi-base m-0 ">Изменить данные</h4>
+            </button>
+            <button class="data_next button-primary button-md ">
+                Перейти к оплате
+                <img src="./icons/arrow-right-white.svg" alt="arrow-right">
+            </button>
+        </div>
+    </section>
+
+
+
+    <footer class="footer position-relative">
+
+
+        <div class="d-flex justify-content-between align-items-center ">
+            <a href="./">
+                <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
+            </a>
+
+            <div class="apps m-0 ">
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media">
+                <div class="d-flex gap-2 ">
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
+                    </a>
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <button class="button-primary ">
+                    <img src="./icons/phone-check.svg" alt="phone-check" class="">
+                    Позвонить сейчас
+                </button>
+
+            </div>
+        </div>
+
+        <div class=" footer__down d-flex justify-content-between align-items-center ">
+            <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
+
+            <div class="d-flex justify-content-between align-items-center gap-4 ">
+                <p class="text-reg-sm m-0">Политика конфиденциальности</p>
+                <p class="text-reg-sm m-0">Условия обслуживания</p>
+            </div>
+
+            <img src="./icons/footer-image.svg" alt="footer-image">
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

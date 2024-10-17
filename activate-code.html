@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./icons/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpolisPlus - kacko</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar__left">
+            <a href="./" class="navbar__logo">
+                <img src="./icons/logo.svg" alt="logo">
+                <h4>Epolis<span>Plus</span></h4>
+            </a>
+
+            <ul class="navbar__links">
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/shield-chevron.svg" alt="shield">
+                        <h3 class="text-semi-base">Гарантийный код</h3>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/calculator.svg" alt="shield">
+                        <h3 class="text-semi-base">Калькулятор полисов</h3>
+                    </a>
+                </li>
+                <li class="dropdown ">
+                    <button class=" navbar__link btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="./icons/briefcase.svg" alt="shield">
+                        <h3 class="text-semi-base">О компании</h3>
+                    </button>
+
+
+                    <ul class="dropdown-menu navbar__lists box-shadow-sm " style="min-width: auto;">
+                        <li class="" style="min-width: auto; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                О нас
+                            </button>
+                        </li>
+                        <li class="" style="min-width: max-content; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                Как стать партнером
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="navbar__right">
+
+            <div class="dropdown">
+                <button class="selected__lng  btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="./icons/russia.svg" alt="ru">
+                    <span class="text-semi-sm">RU</span>
+                    <img src="./icons/chevron-down.svg" alt="chevron">
+                </button>
+
+
+                <ul class="dropdown-menu language__lists box-shadow-sm " style="min-width: auto; max-width: 88px; ">
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class=" dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/uzbekistán.svg" alt="ru">
+                            <span class="text-semi-sm">UZ</span>
+                        </button>
+                    </li>
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class="dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/united kingdom.svg" alt="ru">
+                            <span class="text-semi-sm">EN</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class=" navbar__right-button text-semi-sm box-shadow-sm ">
+                <img src="./icons/phone-call.svg" alt="phone">
+                Экстренный вызов
+            </button>
+            <a href="#" class="navbar__singIn box-shadow-sm text-reg-sm ">
+                <img src="./icons/user-square.svg" alt="user">
+                Войти
+            </a>
+
+        </div>
+    </nav>
+
+    <main class="my-5 ">
+
+        <div class="container-lg px-0 d-flex flex-column justify-content-center align-items-center pb-3 mb-3 ">
+            <div class="w-48px  h-48px mb-3 ">
+                <img src="./icons/shield-chevron.svg" alt="shield-chevron" class="w-100">
+            </div>
+            <h2 class="text-semi-4xl m-0 py-12px pt-0 ">Активировать гарантийный код</h2>
+            <h2 class="text-reg-lg mb-0 ">Введите код, чтобы активировать вашу автостраховку и получить полную защиту.
+            </h2>
+
+        </div>
+
+        <div class="container-sm px-0">
+
+            <form class="mb-3 border-bottom-dashed pb-4 ">
+
+                <div class="d-flex gap-2 mb-2 ">
+
+                    <div class="w-100">
+
+                        <label class="text-reg-sm w-100 text-light-black ">
+                            Гарантийный код <span class="input_important">*</span> <br>
+                        </label>
+
+                        <div class="">
+                            <input type="text"
+                                class="form_input placeholder-text-gray text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                placeholder="Введите код">
+                            <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                        </div>
+                    </div>
+
+                    <div class="align-self-end">
+                        <button class="button-white button-sm d-flex gap-2 box-shadow-sm ">
+                            <img src="./icons/search-gray.svg" alt="search">
+                            Поиск
+                        </button>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mb-3 ">
+                    <button class="button-sm border-0 bg-transparent text-hover text-primary text-semi-sm cursor ">
+                        <img src="./icons/plus-primary.svg" alt="plus">
+                        Добавить гарантийный код
+                    </button>
+                </div>
+
+                <div class="">
+
+
+                    <div class="d-flex gap-2 mb-2 ">
+
+                        <div class="w-100">
+
+                            <label class="text-reg-sm w-100 text-light-black ">
+                                Гарантийный код <span class="input_important">*</span> <br>
+                            </label>
+
+                            <div class="position-relative">
+                                <input type="text"
+                                    class="form_input placeholder-text-gray text-reg-base valid box-shadow-sm mt-1 w-100 pl-40px "
+                                    placeholder="Введите код">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+                                <div class="input__left-icon">
+                                    <img src="./icons/shield-chevron.svg" alt="shield-chevron">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="align-self-end">
+                            <button class="button-secondary p-10px d-flex gap-2 box-shadow-sm rounded-circle ">
+                                <img src="./icons/trashcan.svg" alt="trashcan" width="20px ">
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <select class="form-select form_input text-light-black valid w-100 box-shadow-sm ">
+                        <option selected="" value="">Выберите партнера</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                </div>
+            </form>
+
+            <form class="d-flex flex-column gap-3 w-100 ">
+
+
+                <div class="">
+
+                    <label class="text-reg-sm w-100 text-light-black ">
+                        Гос номер <span class="input_important">*</span> <br>
+                    </label>
+
+                    <div class="">
+                        <input type="text"
+                            class="form_input placeholder-text-gray text-reg-base valid box-shadow-sm mt-1 w-100 "
+                            placeholder="01 A 001 AA">
+                        <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                    </div>
+                </div>
+
+                <div class="">
+
+                    <label class="text-reg-sm w-100 ">
+                        Серия и номер Паспортa/ID <span class="input_important">*</span> <br>
+                        <div class="d-flex gap-2 ">
+
+                            <div class="">
+                                <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                    placeholder="AAF" style="width: 64px !important;">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                            </div>
+                            <div class="w-100">
+                                <input type="text" class="form_input w-100 text-reg-base valid box-shadow-sm mt-1 mr-1 "
+                                    placeholder="0000000">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                            </div>
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="mb-1">
+
+                    <label class="text-reg-sm w-100 text-light-black ">
+                        Номер телефона <span class="input_important">*</span> <br>
+                    </label>
+
+                    <div class="">
+                        <input type="text"
+                            class="form_input placeholder-text-gray text-reg-base valid box-shadow-sm mt-1 w-100 "
+                            placeholder="+998 __-___-__-__">
+                        <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                    </div>
+                </div>
+
+                <button type="button" class="button-sm button-primary text-semi-base ">Загрузить данные</button>
+
+
+            </form>
+        </div>
+
+
+    </main>
+
+    <footer class="footer position-relative">
+
+
+        <div class="d-flex justify-content-between align-items-center ">
+            <a href="./">
+                <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
+            </a>
+
+            <div class="apps m-0 ">
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media">
+                <div class="d-flex gap-2 ">
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
+                    </a>
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <button class="button-primary ">
+                    <img src="./icons/phone-check.svg" alt="phone-check" class="">
+                    Позвонить сейчас
+                </button>
+
+            </div>
+        </div>
+
+        <div class=" footer__down d-flex justify-content-between align-items-center ">
+            <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
+
+            <div class="d-flex justify-content-between align-items-center gap-4 ">
+                <p class="text-reg-sm m-0">Политика конфиденциальности</p>
+                <p class="text-reg-sm m-0">Условия обслуживания</p>
+            </div>
+
+            <img src="./icons/footer-image.svg" alt="footer-image">
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

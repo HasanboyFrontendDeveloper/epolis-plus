@@ -1,0 +1,16 @@
+
+@media (max-width: 1199px) {
+    .rounded-circle-mb {
+        border-radius: 50% !important;
+        padding: 10px !important;
+    }
+
+    .header .swiper-button-prev {
+        left: 91% !important;
+    }
+
+    .how-work .how-work-line {
+        width: 150px;
+        right: -75px;
+    }
+}

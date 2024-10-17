@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./icons/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpolisPlus - kacko</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar__left">
+            <a href="./" class="navbar__logo">
+                <img src="./icons/logo.svg" alt="logo">
+                <h4>Epolis<span>Plus</span></h4>
+            </a>
+
+            <ul class="navbar__links">
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/shield-chevron.svg" alt="shield">
+                        <h3 class="text-semi-base">Гарантийный код</h3>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="navbar__link text-hover ">
+                        <img src="./icons/calculator.svg" alt="shield">
+                        <h3 class="text-semi-base">Калькулятор полисов</h3>
+                    </a>
+                </li>
+                <li class="dropdown ">
+                    <button class=" navbar__link btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="./icons/briefcase.svg" alt="shield">
+                        <h3 class="text-semi-base">О компании</h3>
+                    </button>
+
+
+                    <ul class="dropdown-menu navbar__lists box-shadow-sm " style="min-width: auto;">
+                        <li class="" style="min-width: auto; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                О нас
+                            </button>
+                        </li>
+                        <li class="" style="min-width: max-content; max-width: 232px; ">
+                            <button class="dropdown-item text-hover text-reg-base " type="button">
+                                Как стать партнером
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="navbar__right">
+
+            <div class="dropdown">
+                <button class="selected__lng  btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <img src="./icons/russia.svg" alt="ru">
+                    <span class="text-semi-sm">RU</span>
+                    <img src="./icons/chevron-down.svg" alt="chevron">
+                </button>
+
+
+                <ul class="dropdown-menu language__lists box-shadow-sm " style="min-width: auto; max-width: 88px; ">
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class=" dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/uzbekistán.svg" alt="ru">
+                            <span class="text-semi-sm">UZ</span>
+                        </button>
+                    </li>
+                    <li class="" style="min-width: auto; max-width: 88px; ">
+                        <button class="dropdown-item language__list text-hover " type="button">
+                            <img src="./icons/united kingdom.svg" alt="ru">
+                            <span class="text-semi-sm">EN</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class=" navbar__right-button text-semi-sm box-shadow-sm ">
+                <img src="./icons/phone-call.svg" alt="phone">
+                Экстренный вызов
+            </button>
+            <a href="#" class="navbar__singIn box-shadow-sm text-reg-sm ">
+                <img src="./icons/user-square.svg" alt="user">
+                Войти
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="container-lg d-flex gap-4 px-0 my-5 ">
+
+        <div class="container-mini">
+
+            <h4 class="text-semi-xl mb-3 px-6px ">Данные собственника транспортного средства</h4>
+            <form class="">
+
+                <div class=" d-flex flex-column gap-1 pb-3 border-bottom-dashed ">
+                    <h5 class="text-reg-sm text-light-black mb-2">Выберите программу</h5>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip1" type="radio" class="" name="trips" required="">
+                        <label for="trip1" class="fw-semibold radio-label">Эконом</label>
+                    </div>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip2" type="radio" class="" name="trips" required="">
+                        <label for="trip2" class="fw-semibold radio-label">Классик</label>
+                    </div>
+                    <div class="d-flex column-gap-2 mb-3 ">
+                        <input id="trip3" type="radio" class="" name="trips" required="">
+                        <label for="trip3" class="fw-semibold radio-label">Премиум</label>
+                    </div>
+
+                </div>
+
+                <div class=" border-bottom-dashed ">
+
+                    <div class="d-flex align-items-center justify-content-start py-3 my-3 ">
+                        <input id="phone_number" class="input_agree" type="checkbox" name="phone_number">
+                        <label for="phone_number" class="fs-7 checkbox-label text-reg-base ">Путешествие с
+                            семьей</label>
+                    </div>
+                </div>
+
+                <h4 class="text-semi-xl my-3 pt-3 px-6px ">Информация о страхователе</h4>
+
+                <div class="row row-gap-3 container-mini border-bottom-dashed pb-3 ">
+
+                    <div class="col-md-5 ">
+
+                        <label class="text-reg-sm w-100 text-light-black ">
+                            Дата рождения <span class="input_important">*</span> <br>
+                            <div class="w-100">
+                                <input type="date" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                    autocomplete="off">
+                                <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="col-md-5 col-sm-9 col-8">
+
+                        <div class="">
+
+                            <label class="text-reg-sm w-100 ">
+                                Серия и номер Паспортa/ID <span class="input_important">*</span> <br>
+                                <div class="d-flex gap-2 ">
+
+                                    <div class="">
+                                        <input type="text"
+                                            class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                            placeholder="AAF" style="width: 64px !important;">
+                                        <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                                    </div>
+                                    <div class="w-100">
+                                        <input type="text"
+                                            class="form_input w-100 text-reg-base valid box-shadow-sm mt-1 mr-1 "
+                                            placeholder="0000001">
+                                        <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                                    </div>
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-4  ">
+                        <div class="h-64px">
+                            <button type="submit"
+                                class="button-primary button-sm text-semi-base mt-4 d-flex align-items-center gap-2 w-100 ">
+                                <img src="./icons/search.svg" alt="search">
+                                Поиск
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="d-flex align-items-center justify-content-start py-3 my-3 ">
+                    <input id="rememberMe" class="input_agree" type="checkbox" name="rememberMe">
+                    <label for="rememberMe" class="fs-7 checkbox-label text-reg-base ">Ознакомлен(а) и согласен(а) с
+                        условиями <a href="#" class="text-primary fs-7"></a><a href="#" class="text-primary">Публичной
+                            оферты</a></label>
+                </div>
+
+                <button type="submit" class="button-disabled cursor-block button-md w-100 text-semi-base "
+                    disabled>Подать заявление</button>
+
+            </form>
+
+        </div>
+
+        <div class="container-sm p-0 ">
+
+            <div class="my-32px mt-0">
+                <h2 class="mb-3 text-semi-xl ">Детали путешествия</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Страны</h5>
+                        <h3 class="text-reg-base m-0 ">Великобритания, Франция</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата начала</h5>
+                        <h3 class="text-reg-base m-0 ">13.07.2024</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дни</h5>
+                        <h3 class="text-reg-base m-0 ">7</h3>
+                    </div>
+                    <div class=" py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Цель поездки</h5>
+                        <h3 class="text-reg-base m-0 ">Туризм / Служебная командировка</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-32px mt-0">
+                <h2 class="mb-3 text-semi-xl ">Страховая компания:</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Название</h5>
+                        <h3 class="text-reg-base m-0 ">AO «KAPITAL SUG'URTA»</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Стоимость полиса</h5>
+                        <h3 class="text-reg-base m-0 ">6 500.00 сўм</h3>
+                    </div>
+                    <div class="py-12px pb-0">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Страховая сумма</h5>
+                        <h3 class="text-reg-base m-0 ">20 000 EUR</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h2 class="mb-3 text-semi-xl ">Период страхования</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата начала <span class="input_important">*</span>
+                        </h5>
+                        <input type="date" class="form_input text-reg-base valid box-shadow-sm w-100 "
+                            autocomplete="off">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                    <div class="py-12px pb-0 ">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата окончания <span
+                                class="input_important">*</span>
+                        </h5>
+                        <input type="date" class="form_input text-reg-base disabled box-shadow-sm w-100 " readonly
+                            autocomplete="off">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="container-lg d-flex gap-4 px-0 my-5 ">
+
+        <div class="container-mini">
+
+            <h4 class="text-semi-xl mb-3 px-6px ">Данные собственника транспортного средства</h4>
+            <form class="">
+
+                <div class=" d-flex flex-column gap-1 pb-3 border-bottom-dashed ">
+                    <h5 class="text-reg-sm text-light-black mb-2">Выберите программу</h5>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip1" type="radio" class="" name="trips" required="">
+                        <label for="trip1" class="fw-semibold radio-label">Эконом</label>
+                    </div>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip2" type="radio" class="" name="trips" required="">
+                        <label for="trip2" class="fw-semibold radio-label">Классик</label>
+                    </div>
+                    <div class="d-flex column-gap-2 mb-3 ">
+                        <input id="trip3" type="radio" class="" name="trips" required="">
+                        <label for="trip3" class="fw-semibold radio-label">Премиум</label>
+                    </div>
+
+                </div>
+
+                <div class=" border-bottom-dashed ">
+
+                    <div class="d-flex align-items-center justify-content-start py-3 my-3 ">
+                        <input id="phone_number" class="input_agree" type="checkbox" name="phone_number">
+                        <label for="phone_number" class="fs-7 checkbox-label text-reg-base ">Путешествие с
+                            семьей</label>
+                    </div>
+                </div>
+
+                <h4 class="text-semi-xl my-3 pt-3 px-6px ">Информация о страхователе</h4>
+
+                <div class="row row-gap-3 container-mini pb-1 ">
+
+                    <div class="col-md-5">
+                        <label class="text-reg-sm w-100">
+                            Дата рождения <span class="input_important">*</span> <br>
+                            <div class="w-100">
+                                <input type="date" class="form_input text-reg-base disabled box-shadow-sm mt-1 w-100 "
+                                    autocomplete="off" readonly="" placeholder="01A001AA">
+                                <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="col-md-5 col-sm-9 col-8">
+
+                        <label class="text-reg-sm w-100 ">
+                            Серия и номер тех. паспорта <span class="input_important">*</span> <br>
+                            <div class="d-flex gap-2 w-100 ">
+
+                                <div class="" style="width: 64px;">
+                                    <input type="text"
+                                        class="form_input text-reg-base disabled box-shadow-sm mt-1 w-100 " readonly=""
+                                        placeholder="AAF">
+                                    <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                                </div>
+                                <div class="">
+                                    <input type="text"
+                                        class="form_input w-100 text-reg-base disabled box-shadow-sm mt-1 mr-1  "
+                                        readonly="" placeholder="0000000">
+                                    <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                                </div>
+                            </div>
+
+                        </label>
+                    </div>
+
+                    <div class="col-md-2 col-sm-3 col-4">
+                        <div class="h-64px">
+                            <button type="submit"
+                                class="button-secondary button-sm text-semi-base mt-4 align-items-center d-flex gap-2  ">
+                                <img src="./icons/close-white.svg" alt="close">
+                                Сбросить
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <form class="row row-gap-3 container-mini border-bottom-dashed ">
+
+                <div class="col-md-4">
+                    <label class="text-reg-sm text-gray ">Имя</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="KOMOLJON">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="text-reg-sm text-gray ">Фамилия</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="KOMOLJON">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="text-reg-sm text-gray ">Отчество</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="KOMOLJON">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-1 ">
+                    <label class="text-reg-sm text-gray ">Апп Пинфл</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="42211650067832">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+                    <label class="text-reg-sm text-gray ">Номер телефона</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input valid text-reg-base box-shadow-sm mt-1 w-100 "
+                            value="+998 (11) 111-11-11" placeholder="+998XX-XXX-XX-XX">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+
+                </div>
+
+                <div class="d-flex align-items-center justify-content-start pb-3 mb-3 mt-2">
+                    <input id="traveler" class="input_agree" type="checkbox" name="traveler">
+                    <label for="traveler" class="fs-7 checkbox-label text-reg-base ">Я тоже путешественник</label>
+                </div>
+
+            </form>
+
+            <h4 class="text-semi-xl my-3 pt-3 px-6px ">Путешественник 1</h4>
+
+            <form class="row row-gap-3 container-mini border-bottom-dashed py-32px pt-0 ">
+
+                <div class="col-md-6">
+                    <label class="text-reg-sm w-100">
+                        Дата рождения <span class="input_important">*</span> <br>
+                        <div class="w-100">
+                            <input type="date" class="form_input text-reg-base disabled box-shadow-sm mt-1 w-100 "
+                                autocomplete="off" readonly="" placeholder="01A001AA">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-md-6 col-sm-9 col-8">
+
+                    <label class="text-reg-sm w-100 ">
+                        Серия и номер тех. паспорта <span class="input_important">*</span> <br>
+                        <div class="d-flex gap-2 w-100 ">
+
+                            <div class="" style="width: 64px;">
+                                <input type="text" class="form_input text-reg-base disabled box-shadow-sm mt-1 w-100 "
+                                    readonly="" placeholder="AAF">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                            </div>
+                            <div class="w-100">
+                                <input type="text"
+                                    class="form_input w-100 text-reg-base disabled box-shadow-sm mt-1 mr-1  "
+                                    readonly="" placeholder="0000000">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                            </div>
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="text-reg-sm text-gray ">Имя</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="KOMOLJON">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="text-reg-sm text-gray ">Фамилия</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="KOMOLJON">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <label class="text-reg-sm text-gray ">Отчество</label>
+
+                    <div class="w-100">
+                        <input type="text" class="form_input disabled text-reg-base box-shadow-sm mt-1 w-100 "
+                            readonly="" placeholder="KOMOLJON">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="d-flex justify-content-between my-32px mb-3 px-6px ">
+
+                <h4 class="text-semi-xl m-0">Путешественник 2</h4>
+
+                <button class="button-secondary button-sm d-flex gap-2 align-items-center ">
+                    <img src="./icons/trashcan.svg" alt="trashcan">
+                    Удалить
+                </button>
+            </div>
+            <form class="row row-gap-3 container-mini  pb-2 ">
+
+                <div class="col-md-5 ">
+
+                    <label class="text-reg-sm w-100 text-light-black ">
+                        Дата рождения <span class="input_important">*</span> <br>
+                        <div class="w-100">
+                            <input type="date" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                autocomplete="off">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-md-5 col-sm-9 col-8">
+
+                    <div class="">
+
+                        <label class="text-reg-sm w-100 ">
+                            Серия и номер Паспортa/ID <span class="input_important">*</span> <br>
+                            <div class="d-flex gap-2 ">
+
+                                <div class="">
+                                    <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                        placeholder="AAF" style="width: 64px !important;">
+                                    <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                                </div>
+                                <div class="w-100">
+                                    <input type="text"
+                                        class="form_input w-100 text-reg-base valid box-shadow-sm mt-1 mr-1 "
+                                        placeholder="0000001">
+                                    <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                                </div>
+                            </div>
+
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-4  ">
+                    <div class="h-64px">
+                        <button type="submit"
+                            class="button-primary button-sm text-semi-base mt-4 d-flex align-items-center gap-2 w-100 ">
+                            <img src="./icons/search.svg" alt="search">
+                            Поиск
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+
+            <form class="row row-gap-3 container-mini ">
+                <div class="border-bottom-dashed ">
+                    <button type="button"
+                        class="button-white button-sm box-shadow-sm border-base d-flex gap-2 align-items-center my-32px mt-0 ">
+                        <img src="./icons/plus.svg" alt="plus">
+                        Добавить путешественника
+                    </button>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-start mt-3 ">
+                    <input id="rememberMe" class="input_agree" type="checkbox" name="rememberMe">
+                    <label for="rememberMe" class="fs-7 checkbox-label text-reg-base ">Ознакомлен(а) и согласен(а) с
+                        условиями <a href="#" class="text-primary fs-7"></a><a href="#" class="text-primary">Публичной
+                            оферты</a></label>
+                </div>
+
+                <button type="submit"
+                    class="button-primary button-md mt-3 d-flex gap-2 align-items-center justify-content-center ">
+                    Перейти к осмотру
+                    <img src="./icons/arrow-right-white.svg" alt="arrow-right">
+                </button>
+
+            </form>
+        </div>
+
+        <div class="container-sm p-0 ">
+
+            <div class="my-32px mt-0">
+                <h2 class="mb-3 text-semi-xl ">Детали путешествия</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Страны</h5>
+                        <h3 class="text-reg-base m-0 ">Великобритания, Франция</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата начала</h5>
+                        <h3 class="text-reg-base m-0 ">13.07.2024</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дни</h5>
+                        <h3 class="text-reg-base m-0 ">7</h3>
+                    </div>
+                    <div class=" py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Цель поездки</h5>
+                        <h3 class="text-reg-base m-0 ">Туризм / Служебная командировка</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-32px mt-0">
+                <h2 class="mb-3 text-semi-xl ">Страховая компания:</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px pt-0">
+                        <h5 class="text-reg-sm m-0 mb-1 text-gray ">Название</h5>
+                        <h3 class="text-reg-base m-0 ">AO «KAPITAL SUG'URTA»</h3>
+                    </div>
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Стоимость полиса</h5>
+                        <h3 class="text-reg-base m-0 ">6 500.00 сўм</h3>
+                    </div>
+                    <div class="py-12px pb-0">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Страховая сумма</h5>
+                        <h3 class="text-reg-base m-0 ">20 000 EUR</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h2 class="mb-3 text-semi-xl ">Период страхования</h2>
+
+                <div class="data-table box-shadow-sm ">
+                    <div class="border-bottom-dashed py-12px">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата начала <span class="input_important">*</span>
+                        </h5>
+                        <input type="date" class="form_input text-reg-base valid box-shadow-sm w-100 "
+                            autocomplete="off">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                    <div class="py-12px pb-0 ">
+                        <h5 class="text-reg-sm  m-0 mb-1 text-gray ">Дата окончания <span
+                                class="input_important">*</span>
+                        </h5>
+                        <input type="date" class="form_input text-reg-base disabled box-shadow-sm w-100 " readonly
+                            autocomplete="off">
+                        <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <footer class="footer position-relative">
+
+
+        <div class="d-flex justify-content-between align-items-center ">
+            <a href="./">
+                <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
+            </a>
+
+            <div class="apps m-0 ">
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+                <div class="apps__item box-shadow-sm ">
+                    <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
+                    <div class="">
+                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media">
+                <div class="d-flex gap-2 ">
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
+                    </a>
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <button class="button-primary ">
+                    <img src="./icons/phone-check.svg" alt="phone-check" class="">
+                    Позвонить сейчас
+                </button>
+
+            </div>
+        </div>
+
+        <div class=" footer__down d-flex justify-content-between align-items-center ">
+            <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
+
+            <div class="d-flex justify-content-between align-items-center gap-4 ">
+                <p class="text-reg-sm m-0">Политика конфиденциальности</p>
+                <p class="text-reg-sm m-0">Условия обслуживания</p>
+            </div>
+
+            <img src="./icons/footer-image.svg" alt="footer-image">
+
+        </div>
+
+    </footer>
+
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

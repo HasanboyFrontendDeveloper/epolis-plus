@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
 
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/breakpoints.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="position-relative">
+        <img src="./images/Pattern.png" class="position-absolute z-index-1 start-0 top-0" alt />
+        <nav class="position-absolute top-0 start-0 end-0" id="myHeader">
             <div class="navbar__left">
                 <a href="./" class="navbar__logo">
                     <img src="./icons/logo.svg" alt="logo">
                     <h4>Epolis<span>Plus</span></h4>
                 </a>
 
-                <ul class="navbar__links">
+                <ul class="navbar__links d-none d-lg-flex p-0 ">
                     <li class="">
                         <a href="#" class="navbar__link text-hover ">
                             <img src="./icons/shield-chevron.svg" alt="shield">
@@ -60,9 +62,9 @@
                 </ul>
 
             </div>
-            <div class="navbar__right">
+            <div class="navbar__right ms-auto">
 
-                <div class="dropdown">
+                <div class="dropdown  ">
                     <button class="selected__lng  btn text-hover dropdown-toggle" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -88,14 +90,19 @@
                     </ul>
                 </div>
 
-                <button type="button" class=" navbar__right-button text-semi-sm box-shadow-sm ">
+                <a href="./emergency-call.html"
+                    class=" navbar__right-button d-flex gap-2 align-items-center rounded-circle-mb box-shadow-sm ">
                     <img src="./icons/phone-call.svg" alt="phone">
-                    Экстренный вызов
-                </button>
-                <a href="#" class="navbar__singIn box-shadow-sm text-reg-sm ">
-                    <img src="./icons/user-square.svg" alt="user">
-                    Войти
+                    <span class="text-semi-sm d-none text-white d-xl-block ">Экстренный вызов</span>
                 </a>
+                <a href="./signIn.html" class="navbar__singIn box-shadow-sm rounded-circle-mb">
+                    <img src="./icons/user-square.svg" alt="user">
+                    <span class="text-reg-sm d-none d-xl-block ">Войти</span>
+                </a>
+
+                <button class="p-10px button-white box-shadow-sm rounded-circle-mb d-lg-none " data-bs-toggle="modal"
+                    data-bs-target="#navbar" style="line-height: 0;"><img src="./icons/menu-burger.svg" alt="menu"
+                        width="16px"></button>
 
             </div>
         </nav>
@@ -103,7 +110,7 @@
         <section class="header">
 
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper header-swiper ">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -175,12 +182,11 @@
 
                     <!-- If we need pagination -->
 
-                    <!-- If we need navigation buttons -->
                     <div class="swiper-pagination "></div>
 
-                    <div class="swiper-arrows">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-arrows position-absolute end-0 ">
                         <div class="swiper-button-prev box-shadow-sm position-static ">
-                            <!-- <img src="./icons/arrow-right.svg" alt="arrow-right"> -->
                             <img src="./icons/arrow-prev.svg" alt="arrow-prev">
                         </div>
                         <div class="swiper-button-next box-shadow-sm">
@@ -210,6 +216,57 @@
 
         </section>
 
+
+        <div class="modal fade " id="navbar" tabindex="-1" aria-labelledby="navbarLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content p-4 ">
+                    <div class="modal-header">
+                        <div class="modal-header__text">
+                            <div class="icon-secondary">
+                                <img src="./icons/shield-star.svg" alt="sheild">
+                            </div>
+                            <div class="">
+                                <h5 class="text-reg-sm m-0 ">Услуга</h5>
+                                <h4 class="text-semi-xl m-0">Оформления "Европротокола"</h4>
+                            </div>
+                        </div>
+                        <div class="modal-header__limit">
+                            <button type="button" class="modal-close " data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./icons/close.svg" alt="close">
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="modal-body mt-3 d-flex ">
+                        <div class="modal-body__text gap-2 ">
+
+                            <h5 class="text-reg-sm m-0 ">Описание</h5>
+
+                            <p class="mb-0 text-reg-base modal-body__text__item ">
+                                - Мы предоставляем услугу оформления европротокола, необходимого для решения
+                                юридических вопросов при дорожно-транспортных происшествиях.
+                            </p>
+
+                            <p class="mb-0 text-reg-base modal-body__text__item ">
+                                - Наши специалисты помогут правильно и оперативно оформить все необходимые документы,
+                                чтобы обеспечить вашу защиту и законные интересы.
+                            </p>
+
+                        </div>
+                        <div class="modal-body__price pl-3 ">
+                            <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
+                            <h4 class="text-semi-base d-flex gap-2 mb-3 ">
+                                <img src="./icons/coins.svg" alt="coin">
+                                150 000 сум
+                            </h4>
+                            <button class="button-primary box-shadow-sm w-100 py-2 ">Оформить</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <section class="cross_line">
@@ -225,7 +282,7 @@
     <section class="calculator">
         <h3 class="text-center text-semi-4xl mb-4 ">Калькулятор</h3>
         <div class="calculator_btns mb-4 ">
-            <div class="calculator__item active ">
+            <div class="calculator_btns__item  ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4.66667 16.6667C4.66667 17.1087 4.84226 17.5326 5.15482 17.8452C5.46738 18.1577 5.89131 18.3333 6.33333 18.3333C6.77536 18.3333 7.19928 18.1577 7.51184 17.8452C7.8244 17.5326 8 17.1087 8 16.6667M4.66667 16.6667C4.66667 16.2246 4.84226 15.8007 5.15482 15.4881C5.46738 15.1756 5.89131 15 6.33333 15C6.77536 15 7.19928 15.1756 7.51184 15.4881C7.8244 15.8007 8 16.2246 8 16.6667M4.66667 16.6667H3V11.6667M8 16.6667H13M13 16.6667C13 17.1087 13.1756 17.5326 13.4882 17.8452C13.8007 18.1577 14.2246 18.3333 14.6667 18.3333C15.1087 18.3333 15.5326 18.1577 15.8452 17.8452C16.1577 17.5326 16.3333 17.1087 16.3333 16.6667M13 16.6667C13 16.2246 13.1756 15.8007 13.4882 15.4881C13.8007 15.1756 14.2246 15 14.6667 15C15.1087 15 15.5326 15.1756 15.8452 15.4881C16.1577 15.8007 16.3333 16.2246 16.3333 16.6667M16.3333 16.6667H18V13.3333C18 12.8913 17.8244 12.4674 17.5118 12.1548C17.1993 11.8423 16.7754 11.6667 16.3333 11.6667H15.5M3 11.6667L4.66667 7.49999H12.1667L15.5 11.6667M3 11.6667H15.5M10.5 11.6667V7.49999M3 4.99999L10.5 1.66666L18 4.99999"
@@ -233,7 +290,7 @@
                 </svg>
                 <span class="text-semi-base">KACKO</span>
             </div>
-            <div class="calculator__item  ">
+            <div class="calculator_btns__item active ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4.66667 14.1667C4.66667 14.6087 4.84226 15.0326 5.15482 15.3452C5.46738 15.6577 5.89131 15.8333 6.33333 15.8333C6.77536 15.8333 7.19928 15.6577 7.51184 15.3452C7.8244 15.0326 8 14.6087 8 14.1667M4.66667 14.1667C4.66667 13.7246 4.84226 13.3007 5.15482 12.9882C5.46738 12.6756 5.89131 12.5 6.33333 12.5C6.77536 12.5 7.19928 12.6756 7.51184 12.9882C7.8244 13.3007 8 13.7246 8 14.1667M4.66667 14.1667H3V9.16667M8 14.1667H13M13 14.1667C13 14.6087 13.1756 15.0326 13.4882 15.3452C13.8007 15.6577 14.2246 15.8333 14.6667 15.8333C15.1087 15.8333 15.5326 15.6577 15.8452 15.3452C16.1577 15.0326 16.3333 14.6087 16.3333 14.1667M13 14.1667C13 13.7246 13.1756 13.3007 13.4882 12.9882C13.8007 12.6756 14.2246 12.5 14.6667 12.5C15.1087 12.5 15.5326 12.6756 15.8452 12.9882C16.1577 13.3007 16.3333 13.7246 16.3333 14.1667M16.3333 14.1667H18V10.8333C18 10.3913 17.8244 9.96738 17.5118 9.65482C17.1993 9.34226 16.7754 9.16667 16.3333 9.16667H15.5M3 9.16667L4.66667 5H12.1667L15.5 9.16667M3 9.16667H15.5M10.5 9.16667V5"
@@ -242,7 +299,7 @@
 
                 <span class="text-semi-base">ОСАГО</span>
             </div>
-            <div class="calculator__item  ">
+            <div class="calculator_btns__item  ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M12.5833 5.41666L15.0833 2.99999C15.4038 2.67952 15.8385 2.49948 16.2917 2.49948C16.7449 2.49948 17.1795 2.67952 17.5 2.99999C17.8205 3.32046 18.0005 3.75511 18.0005 4.20832C18.0005 4.66154 17.8205 5.09619 17.5 5.41666L15.0833 7.91666L17.1667 14.1667L15.0833 16.2917L12.1667 10.8333L9.66667 13.3333V15.8333L8 17.5L6.75 13.75L3 12.5L4.66667 10.8333H7.16667L9.66667 8.33332L4.25 5.41666L6.33333 3.33332L12.5833 5.41666Z"
@@ -251,7 +308,7 @@
 
                 <span class="text-semi-base">Путешествие</span>
             </div>
-            <div class="calculator__item  ">
+            <div class="calculator_btns__item  ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M14.6667 14.1667V15.8333C14.6667 16.2754 14.4911 16.6993 14.1785 17.0118C13.866 17.3244 13.442 17.5 13 17.5H4.66667C4.22464 17.5 3.80072 17.3244 3.48816 17.0118C3.17559 16.6993 3 16.2754 3 15.8333V7.5C3 7.05797 3.17559 6.63405 3.48816 6.32149C3.80072 6.00893 4.22464 5.83333 4.66667 5.83333H6.33333M6.33333 4.16667C6.33333 3.72464 6.50893 3.30072 6.82149 2.98816C7.13405 2.67559 7.55797 2.5 8 2.5H16.3333C16.7754 2.5 17.1993 2.67559 17.5118 2.98816C17.8244 3.30072 18 3.72464 18 4.16667V12.5C18 12.942 17.8244 13.366 17.5118 13.6785C17.1993 13.9911 16.7754 14.1667 16.3333 14.1667H8C7.55797 14.1667 7.13405 13.9911 6.82149 13.6785C6.50893 13.366 6.33333 12.942 6.33333 12.5V4.16667Z"
@@ -262,8 +319,9 @@
             </div>
         </div>
 
-        <div class="calculator__cards  ">
-            <div class="calculator__card box-shadow-sm ">
+        <!-- <div class="calculator__cards tab-panel ">
+
+            <div class="calculator__card box-shadow-sm  ">
                 <div class="calculator__card__header">
                     <div class="icon-secondary ">
                         <img src="./icons/box.svg" alt="box-icon">
@@ -301,7 +359,7 @@
                     </div>
 
                     <div class="d-flex gap-2 ">
-                        
+
                         <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Подробнее
@@ -358,7 +416,7 @@
 
                     <div class="d-flex gap-2 ">
 
-                        
+
                         <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Подробнее
@@ -422,7 +480,7 @@
 
                     <div class="d-flex gap-2 ">
 
-                        
+
                         <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Подробнее
@@ -486,7 +544,7 @@
 
                     <div class="d-flex gap-2 ">
 
-                        
+
                         <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Подробнее
@@ -495,7 +553,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="calculator__card box-shadow-sm ">
+            <div class="calculator__card box-shadow-sm ">
                 <div class="calculator__card__header">
                     <div class="icon-secondary ">
                         <img src="./icons/award.svg" alt="award-icon">
@@ -557,12 +615,727 @@
                         <button class="button-primary box-shadow-sm py-2 ">Оформить</button>
                     </div>
                 </div>
-            </div> -->
+            </div>
+        </div> -->
+
+        <div class="calculator__cards tab-panel swiper kasko-swiper d-none ">
+            <div class="swiper-wrapper ">
+
+
+                <div class="swiper-slide calculator__card box-shadow-sm  ">
+                    <div class="calculator__card__header">
+                        <div class="icon-secondary ">
+                            <img src="./icons/box.svg" alt="box-icon">
+                        </div>
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Тариф</h5>
+                            <h4 class="text-semi-xl m-0 ">Simple</h4>
+                        </div>
+                    </div>
+                    <div class="calculator__card__body">
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Общий лимит возмещения</h5>
+                            <h4 class=" price text-semi-2xl m-0 ">3 000 000</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-2 ">
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/evacuator.svg" alt="evacuator">
+                                <span class="text-reg-base"> ЭВАКУАЦИЯ </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tier.svg" alt="tier">
+                                <span class="text-reg-base"> Замена колеса </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tie.svg" alt="tie">
+                                <span class="text-reg-base"> Юридическая консультация </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__card__footer">
+                        <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
+                        <div class="d-flex gap-2 price ">
+                            <img src="./icons/coins.svg" alt="coin">
+                            <h4 class="text-semi-base m-0">100 000 сум</h4>
+                        </div>
+
+                        <div class="d-flex gap-2 ">
+
+                            <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
+                                data-bs-target="#kackoModal">
+                                Подробнее
+                            </button>
+                            <button class="button-primary box-shadow-sm py-2 ">Оформить</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide calculator__card box-shadow-sm ">
+                    <div class="calculator__card__header">
+                        <div class="icon-secondary ">
+                            <img src="./icons/box.svg" alt="box-icon">
+                        </div>
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Тариф</h5>
+                            <h4 class="text-semi-xl m-0 ">Standard</h4>
+                        </div>
+                    </div>
+                    <div class="calculator__card__body">
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Общий лимит возмещения</h5>
+                            <h4 class=" price text-semi-2xl m-0 ">12 000 000</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-2 ">
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/umbrella.svg" alt="umbrella">
+                                <span class="text-reg-base"> ДСАГО </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/evacuator.svg" alt="evacuator">
+                                <span class="text-reg-base"> ЭВАКУАЦИЯ </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tier.svg" alt="tier">
+                                <span class="text-reg-base"> Замена колеса </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/help.svg" alt="help">
+                                <span class="text-reg-base"> Страховой помощник </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tie.svg" alt="tie">
+                                <span class="text-reg-base"> Юридическая консультация </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__card__footer">
+                        <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
+                        <div class="d-flex gap-2 price ">
+                            <img src="./icons/coins.svg" alt="coin">
+                            <h4 class="text-semi-base m-0">250 000 сум</h4>
+                        </div>
+
+                        <div class="d-flex gap-2 ">
+
+
+                            <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
+                                data-bs-target="#kackoModal">
+                                Подробнее
+                            </button>
+                            <button class="button-primary box-shadow-sm py-2 ">Оформить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide calculator__card box-shadow-sm ">
+                    <div class="calculator__card__header">
+                        <div class="icon-secondary ">
+                            <img src="./icons/api-app.svg" alt="app-icon">
+                        </div>
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Тариф</h5>
+                            <h4 class="text-semi-xl m-0 ">Silver</h4>
+                        </div>
+                    </div>
+                    <div class="calculator__card__body">
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Общий лимит возмещения</h5>
+                            <h4 class=" price text-semi-2xl m-0 ">70 000 000</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-2 ">
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/car-garage.svg" alt="car-garage">
+                                <span class="text-reg-base"> АВТОКАСКО </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/umbrella.svg" alt="umbrella">
+                                <span class="text-reg-base"> ДСАГО </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/flame.svg" alt="flame">
+                                <span class="text-reg-base"> Страхование от несчастных случаев </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/evacuator.svg" alt="evacuator">
+                                <span class="text-reg-base"> ЭВАКУАЦИЯ </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tier.svg" alt="tier">
+                                <span class="text-reg-base"> Замена колеса </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/help.svg" alt="help">
+                                <span class="text-reg-base"> Страховой помощник </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tie.svg" alt="tie">
+                                <span class="text-reg-base"> Юридическая консультация </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__card__footer">
+                        <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
+                        <div class="d-flex gap-2 price ">
+                            <img src="./icons/coins.svg" alt="coin">
+                            <h4 class="text-semi-base m-0">400 000 сум</h4>
+                        </div>
+
+                        <div class="d-flex gap-2 ">
+
+
+                            <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
+                                data-bs-target="#kackoModal">
+                                Подробнее
+                            </button>
+                            <button class="button-primary box-shadow-sm py-2 ">Оформить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide calculator__card box-shadow-sm ">
+                    <div class="calculator__card__header">
+                        <div class="icon-secondary ">
+                            <img src="./icons/award.svg" alt="award-icon">
+                        </div>
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Тариф</h5>
+                            <h4 class="text-semi-xl m-0 ">Gold</h4>
+                        </div>
+                    </div>
+                    <div class="calculator__card__body">
+                        <div class="">
+                            <h5 class="text-reg-sm m-0 ">Общий лимит возмещения</h5>
+                            <h4 class=" price text-semi-2xl m-0 ">110 000 000</h4>
+                        </div>
+                        <div class="d-flex flex-column gap-2 ">
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/car-garage.svg" alt="car-garage">
+                                <span class="text-reg-base"> АВТОКАСКО </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/umbrella.svg" alt="umbrella">
+                                <span class="text-reg-base"> ДСАГО </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/flame.svg" alt="flame">
+                                <span class="text-reg-base"> Страхование от несчастных случаев </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/evacuator.svg" alt="evacuator">
+                                <span class="text-reg-base"> ЭВАКУАЦИЯ </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tier.svg" alt="tier">
+                                <span class="text-reg-base"> Замена колеса </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/help.svg" alt="help">
+                                <span class="text-reg-base"> Страховой помощник </span>
+                            </div>
+                            <div class="d-flex gap-2  ">
+                                <img src="./icons/tie.svg" alt="tie">
+                                <span class="text-reg-base"> Юридическая консультация </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__card__footer">
+                        <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
+                        <div class="d-flex gap-2 price ">
+                            <img src="./icons/coins.svg" alt="coin">
+                            <h4 class="text-semi-base m-0">800 000 сум</h4>
+                        </div>
+
+                        <div class="d-flex gap-2 ">
+
+                            <button type="button" class="button-white box-shadow-sm py-2" data-bs-toggle="modal"
+                                data-bs-target="#kackoModal">
+                                Подробнее
+                            </button>
+                            <button class="button-primary box-shadow-sm py-2 ">Оформить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
+        <div class="container-mini tab-panel d-none osago">
+            <form class="row row-gap-3 pl-3 pb-3 max-w-744 mx-auto ">
+                <div class="col-md-3 ">
+                    <label class="text-reg-sm text-gray w-100">
+                        Гос номер <span class="input_important">*</span> <br>
+                        <div class="w-100">
+                            <input type="text" class="form_input text-reg-base w-100 valid box-shadow-sm mt-1 "
+                                placeholder="01A001AA">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-md-4 col-sm-9 col-8">
+
+                    <label class="text-reg-sm text-gray ">
+                        Серия и номер тех. паспорта <span class="input_important">*</span> <br>
+                        <div class="d-flex gap-2 ">
+
+                            <div class="" style="width: 64px;">
+                                <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                    placeholder="AAF">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+
+                            </div>
+                            <div class="">
+                                <input type="text" class="form_input text-reg-base valid box-shadow-sm w-100 mt-1 mr-1 "
+                                    placeholder="0000000">
+                                <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
+
+                            </div>
+                        </div>
+
+                    </label>
+                </div>
+
+                <div class="col-md-3 ">
+                    <label class="text-reg-sm text-gray w-100">
+                        Гос номер <span class="input_important">*</span> <br>
+                        <!-- <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6> -->
+                    </label>
+
+                    <select class="form-select form_input valid w-100 box-shadow-sm ">
+                        <option selected="" value="">Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-4">
+                    <div class="h-64px">
+                        <button type="submit" class="button-primary button-sm text-semi-base mt-4  ">
+                            <img src="./icons/search.svg" alt="search">
+                            Поиск
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+
+            <section class="partners mt-64px ">
+                <h5 class="text-center text-reg-base py-3 ">Наши страховые партнеры</h5>
+                <div class="swiper partners-swiper">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                        </div>
+
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                        </div>
+
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                        </div>
+
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div class="partners__logos">
+                    <div class="partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                    </div>
+                    <div class="partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
+                </div> -->
+            </section>
+
+            <div class=" ">
+                <h3 class="text-semi-xl m-0 ">Результаты</h3>
+
+                <div
+                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    <div class="px-1">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
+                    <div class="d-flex gap-3 align-items-center ">
+                        <h4 class="text-reg-base m-0 ">1 год</h4>
+                        <h3 class="text-semi-base m-0 ">UZS 168,000</h3>
+                        <button class="text-semi-sm button-primary button-sm ml-2 box-shadow-sm ">Купить</button>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    <div class="px-1">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
+                    <div class="d-flex gap-3 align-items-center ">
+                        <h4 class="text-reg-base m-0 ">1 год</h4>
+                        <h3 class="text-semi-base m-0 ">UZS 168,000</h3>
+                        <button class="text-semi-sm button-primary button-sm ml-2 box-shadow-sm ">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-mini tab-panel journey">
+
+            <form class=" container-mini row row-gap-3 pl-3 max-w-744 mx-auto ">
+                <div class="col-6 ">
+                    <label class="text-reg-sm text-light-black w-100 ">
+                        Страны <span class="input_important">*</span> <br>
+                        <div class="w-100 position-relative">
+                            <input type="text" class="form_input text-reg-base w-100 valid box-shadow-sm mt-1 ">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                            <div class="position-absolute top-50 translate-middle start-50 w-100 ps-2 d-flex gap-2 ">
+                                <div class="button-white box-shadow-sm text-reg-sm button-xs max-w-fit ">
+                                    Польша
+                                    <img src="./icons/close.svg" alt="">
+                                </div>
+                                <div class="button-white box-shadow-sm text-reg-sm button-xs max-w-fit ">
+                                    Франция
+                                    <img src="./icons/close.svg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-6 ">
+                    <label class="text-reg-sm text-light-black w-100">
+                        Тип полиса <span class="input_important">*</span> <br>
+                    </label>
+
+                    <select class="form-select form_input valid w-100 box-shadow-sm ">
+                        <option selected="" value="">Oднократное путешествие</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="col-5">
+                    <label class="text-reg-sm w-100 text-light-black ">
+                        Дата рождения <span class="input_important">*</span> <br>
+                        <div class="w-100">
+                            <input type="date" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                autocomplete="off">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-5">
+                    <label class="text-reg-sm w-100 text-light-black ">
+                        Дата рождения <span class="input_important">*</span> <br>
+                        <div class="w-100">
+                            <input type="date" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                autocomplete="off">
+                            <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-2">
+
+                    <label class="text-reg-sm w-100 text-light-black ">
+                        Кол-во дней <span class="input_important">*</span> <br>
+
+                        <div class="w-100">
+                            <input type="text"
+                                class="form_input placeholder-text-gray text-reg-base valid box-shadow-sm mt-1 w-100 "
+                                placeholder="0">
+                            <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
+                        </div>
+
+                    </label>
+
+                </div>
+
+                <div class="d-flex flex-column">
+                    <h5 class="text-reg-sm text-light-black mb-2">Цель поездки</h5>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip1" type="radio" class="" name="trips" required="">
+                        <label for="trip1" class="fw-semibold radio-label">Туризм / Служебная
+                            командировка</label>
+                    </div>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip2" type="radio" class="" name="trips" required="">
+                        <label for="trip2" class="fw-semibold radio-label">Работа (Физический
+                            труд)</label>
+                    </div>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip3" type="radio" class="" name="trips" required="">
+                        <label for="trip3" class="fw-semibold radio-label">Спорт</label>
+                    </div>
+                    <div class="d-flex column-gap-2">
+                        <input id="trip4" type="radio" class="" name="trips" required="">
+                        <label for="trip4" class="fw-semibold radio-label">Учеба</label>
+                    </div>
+
+                    <button type="submit" class="button-md button-primary box-shadow-sm mt-4">Расчет</button>
+                </div>
+
+            </form>
+
+
+            <section class="partners mt-5 ">
+                <h5 class="text-center text-reg-base py-3 ">Наши страховые партнеры</h5>
+                <div class="swiper partners-swiper">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                        </div>
+
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                        </div>
+
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                        </div>
+
+                        <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                            <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div class="partners__logos">
+                    <div class="partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                    </div>
+                    <div class="partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
+                </div> -->
+            </section>
+
+            <div class="mt-5 pt-3 border-top-dashed ">
+                <h3 class="text-semi-xl m-0 ">Результаты</h3>
+
+                <div
+                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    <div class="px-1">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
+                    <div class="d-flex gap-3 align-items-center ">
+                        <h4 class="text-reg-base m-0 ">1 год</h4>
+                        <h3 class="text-semi-base m-0 ">UZS 168,000</h3>
+                        <button class="text-semi-sm button-primary button-sm ml-2 box-shadow-sm ">Купить</button>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    <div class="px-1">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
+                    <div class="d-flex gap-3 align-items-center ">
+                        <h4 class="text-reg-base m-0 ">1 год</h4>
+                        <h3 class="text-semi-base m-0 ">UZS 168,000</h3>
+                        <button class="text-semi-sm button-primary button-sm ml-2 box-shadow-sm ">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" tab-panel services mx-auto d-none">
+            <div class="discount d-flex gap-2 bg-light-secondary max-w-fit button-sm rounded-sm mx-auto ">
+                <img src="./icons/gift.svg" alt="gift-icon">
+                <h4 class="text-reg-base m-0 ">Оформляя более 2 услуг <span class="text-semi-base text-secondary ">Вы
+                        получаете скидку 20%</span></h4>
+            </div>
+
+            <div class="row row-gap-4 mt-3 p-0 pt-3 pb-1 container-lg ">
+                <div class="col-xl-3 col-lg-4 col-md-6 rounded-sm ">
+
+                    <label for="services1"
+                        class="service-box d-flex flex-column align-items-start p-3 bg-light-secondary rounded-sm  ">
+
+                        <div class="position-relative w-100 ">
+                            <div class="icon-secondary mb-2 ">
+                                <img src="./icons/pencil.svg" alt="pencil">
+                            </div>
+
+                            <input id="services1" class="input_agree " type="checkbox" name="phone_number">
+                            <label for="services1"
+                                class="fs-7 checkbox-label service-checkbox position-absolute top-0 end-0 text-reg-base "></label>
+
+                        </div>
+                        <h4 class="text-semi-xl mb-1">Оформления "Европротокола"</h4>
+
+                        <div class="mt-auto w-100 border-top-dashed pt-3  ">
+                            <h5 class="text-gray text-reg-sm ">Стоимость</h5>
+                            <div class="button-sm d-flex gap-2 rounded-sm bg-light-gray mb-1 ">
+                                <img src="./icons/coins.svg" alt="coin">
+                                <h4 class="text-semi-base m-0">150 000 сум</h4>
+                            </div>
+                            <button type="button" class="button-sm text-reg-base button-white w-100 mt-2 "
+                                data-bs-toggle="modal" data-bs-target="#serviceModel">Подробнее</button>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 rounded-sm ">
+
+                    <label for="services2"
+                        class="service-box d-flex flex-column align-items-start p-3 bg-light-secondary rounded-sm  ">
+
+                        <div class="position-relative w-100 ">
+                            <div class="icon-secondary mb-2 ">
+                                <img src="./icons/car-crane.svg" alt="car-crane">
+                            </div>
+
+                            <input id="services2" class="input_agree " type="checkbox" name="phone_number">
+                            <label for="services2"
+                                class="fs-7 checkbox-label service-checkbox position-absolute top-0 end-0 text-reg-base "></label>
+
+                        </div>
+                        <h4 class="text-semi-xl mb-1">Эвакуация <br> автомобиля</h4>
+
+                        <div class="mt-auto w-100 border-top-dashed pt-3  ">
+                            <h5 class="text-gray text-reg-sm ">Стоимость</h5>
+                            <div class="button-sm d-flex gap-2 rounded-sm bg-light-gray mb-1 ">
+                                <img src="./icons/coins.svg" alt="coin">
+                                <h4 class="text-semi-base m-0">150 000 сум</h4>
+                            </div>
+                            <button type="button" class="button-sm text-reg-base button-white w-100 mt-2 "
+                                data-bs-toggle="modal" data-bs-target="#serviceModel">Подробнее</button>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 rounded-sm ">
+
+                    <label for="services3"
+                        class="service-box d-flex flex-column align-items-start p-3 bg-light-secondary rounded-sm  ">
+
+                        <div class="position-relative w-100 ">
+                            <div class="icon-secondary mb-2 ">
+                                <img src="./icons/gas-station.svg" alt="gas-station">
+                            </div>
+
+                            <input id="services3" class="input_agree " type="checkbox" name="phone_number">
+                            <label for="services3"
+                                class="fs-7 checkbox-label service-checkbox position-absolute top-0 end-0 text-reg-base "></label>
+
+                        </div>
+                        <h4 class="text-semi-xl mb-1">Подвоз топлива</h4>
+
+                        <div class="mt-auto w-100 border-top-dashed pt-3  ">
+                            <h5 class="text-gray text-reg-sm ">Стоимость</h5>
+                            <div class="button-sm d-flex gap-2 rounded-sm bg-light-gray mb-1 ">
+                                <img src="./icons/coins.svg" alt="coin">
+                                <h4 class="text-semi-base m-0">50 000 сум</h4>
+                            </div>
+                            <button type="button" class="button-sm text-reg-base button-white w-100 mt-2 "
+                                data-bs-toggle="modal" data-bs-target="#serviceModel">Подробнее</button>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 rounded-sm ">
+
+                    <label for="services4"
+                        class="service-box d-flex flex-column align-items-start p-3 bg-light-secondary rounded-sm  ">
+
+                        <div class="position-relative w-100 ">
+                            <div class="icon-secondary mb-2 ">
+                                <img src="./icons/battery-automotive.svg" alt="battery-automotive">
+                            </div>
+
+                            <input id="services4" class="input_agree " type="checkbox" name="phone_number">
+                            <label for="services4"
+                                class="fs-7 checkbox-label service-checkbox position-absolute top-0 end-0 text-reg-base "></label>
+
+                        </div>
+                        <h4 class="text-semi-xl mb-1">Зарядка и запуск аккумулятора</h4>
+
+                        <div class="mt-auto w-100 border-top-dashed pt-3  ">
+                            <h5 class="text-gray text-reg-sm ">Стоимость</h5>
+                            <div class="button-sm d-flex gap-2 rounded-sm bg-light-gray mb-1 ">
+                                <img src="./icons/coins.svg" alt="coin">
+                                <h4 class="text-semi-base m-0">60 000 сум</h4>
+                            </div>
+                            <button type="button" class="button-sm text-reg-base button-white w-100 mt-2 "
+                                data-bs-toggle="modal" data-bs-target="#serviceModel">Подробнее</button>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="border-base mt-3 box-shadow-sm p-3 max-w-544 rounded-sm ">
+                <div class="py-3 ">
+                    <div class="p-3 mt-3 mb-2 rounded-circle border-base bg-light-gray w-68px h-68px mx-auto ">
+                        <img src="./icons/shield-off.svg" alt="shield-off">
+                    </div>
+                    <h5 class="text-gray text-reg-base text-center mt-2 mb-3 ">Список услуг пуст. Выберите одну или
+                        несколько услуг. </h5>
+                </div>
+                <div class="border-top-dashed pt-3 mt-3 ">
+                    <h5 class="text-gray text-reg-sm ">Общая сумма подписки:</h5>
+
+                    <div class="py-12px px-3 d-flex gap-2 rounded-sm bg-light-gray ">
+                        <img src="./icons/coins.svg" alt="coin">
+                        <h4 class="text-semi-2xl text-light-black m-0">150 000 сум</h4>
+                    </div>
+
+                    <button
+                        class="text-light-black text-semi-base w-100 button-md border-gray rounded-sm mt-3 cursor-block ">Оформить</button>
+                </div>
+            </div>
+
+            <div class="border-base mt-3 box-shadow-sm p-3 max-w-544 rounded-sm ">
+                <div class="">
+                    <h4 class="text-reg-base pb-1 mb-2 ">Выбранные услуги:</h4>
+
+                    <div class="pb-1 border-bottom-dashed ">
+                        <div
+                            class="mb-2 py-12px px-3 d-flex gap-3 align-items-center justify-content-between bg-light-gray rounded-sm ">
+                            <span class="text-reg-sm">1</span>
+                            <h4 class="text-reg-sm me-auto mb-0 ">Оформления "Европротокола"</h4>
+                            <h4 class="text-reg-sm mb-0 ">150 000 сум</h4>
+                            <img src="./icons/trash.svg" alt="trash">
+                        </div>
+                        <div
+                            class="mb-2 py-12px px-3 d-flex gap-3 align-items-center justify-content-between bg-light-gray rounded-sm ">
+                            <span class="text-reg-sm">2</span>
+                            <h4 class="text-reg-sm me-auto mb-0 ">Замена бензонасоса при неисправности</h4>
+                            <h4 class="text-reg-sm mb-0 ">125 000 сум</h4>
+                            <img src="./icons/trash.svg" alt="trash">
+                        </div>
+                    </div>
+
+                    <div class="pb-3 border-bottom-dashed pt-2 mt-1 d-flex ">
+                        <h4 class="text-reg-base m-0 me-auto ">Итого:</h4>
+                        <span class="text-semi-base">275 000 сум</span>
+                    </div>
+
+                    <div class="py-3 border-bottom-dashed d-flex gap-1 ">
+                        <img src="./icons/gift.svg" alt="gift">
+                        <h4 class="text-semi-base m-0 ml-1 me-auto text-secondary ">Скидка 20%</h4>
+                        <span class="text-semi-base text-secondary">-55 000 сум</span>
+                    </div>
+                </div>
+                <div class="mt-3 ">
+                    <h5 class="text-gray text-reg-sm ">Общая сумма подписки:</h5>
+
+                    <div class="py-12px px-3 d-flex gap-2 rounded-sm bg-light-gray ">
+                        <img src="./icons/coins.svg" alt="coin">
+                        <h4 class="text-semi-2xl  m-0">150 000 сум</h4>
+                    </div>
+
+                    <button class=" button-primary text-semi-base w-100 button-md border-gray mt-3 ">Оформить</button>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Modal -->
-        <div class="modal fade calculator__modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade " id="kackoModal" tabindex="-1" aria-labelledby="kackoModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content p-4 ">
                     <div class="modal-header">
@@ -637,6 +1410,61 @@
             </div>
         </div>
 
+        <div class="modal fade " id="serviceModel" tabindex="-1" aria-labelledby="serviceModelLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content p-4 ">
+                    <div class="modal-header">
+                        <div class="modal-header__text">
+                            <div class="icon-secondary">
+                                <img src="./icons/shield-star.svg" alt="sheild">
+                            </div>
+                            <div class="">
+                                <h5 class="text-reg-sm m-0 ">Услуга</h5>
+                                <h4 class="text-semi-xl m-0">Оформления "Европротокола"</h4>
+                            </div>
+                        </div>
+                        <div class="modal-header__limit">
+                            <button type="button" class="modal-close " data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./icons/close.svg" alt="close">
+                            </button>
+                        </div>
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+
+                        <!-- <div class="modal-close">
+                            <img src="./icons/close.svg" alt="close"  >
+                        </div> -->
+
+                    </div>
+                    <div class="modal-body mt-3 d-flex ">
+                        <div class="modal-body__text gap-2 ">
+
+                            <h5 class="text-reg-sm m-0 ">Описание</h5>
+
+                            <p class="mb-0 text-reg-base modal-body__text__item ">
+                                - Мы предоставляем услугу оформления европротокола, необходимого для решения
+                                юридических вопросов при дорожно-транспортных происшествиях.
+                            </p>
+
+                            <p class="mb-0 text-reg-base modal-body__text__item ">
+                                - Наши специалисты помогут правильно и оперативно оформить все необходимые документы,
+                                чтобы обеспечить вашу защиту и законные интересы.
+                            </p>
+
+                        </div>
+                        <div class="modal-body__price pl-3 ">
+                            <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
+                            <h4 class="text-semi-base d-flex gap-2 mb-3 ">
+                                <img src="./icons/coins.svg" alt="coin">
+                                150 000 сум
+                            </h4>
+                            <button class="button-primary box-shadow-sm w-100 py-2 ">Оформить</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="download_app ">
@@ -675,7 +1503,7 @@
         <div class="cross_line__right"></div>
     </section>
 
-    <section class="aboutUs">
+    <section class="aboutUs flex-column flex-md-row ">
         <div class="aboutUs__left">
             <div class="aboutUs__left__icon">
                 <img src="./icons/logo.svg" alt="logo" width="72px" height="74px">
@@ -729,22 +1557,39 @@
         </div>
     </section>
 
-    <section class="partners">
+
+    <section class="partners mt-64px ">
         <h5 class="text-center text-reg-base py-3 ">Наши страховые партнеры</h5>
-        <div class="partners__logos">
-            <div class="partners__logos__item py-3 d-flex justify-content-center ">
-                <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
-            </div>
-            <div class="partners__logos__item py-3 d-flex justify-content-center ">
-                <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+        <div class="swiper partners-swiper">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                    <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                </div>
+
+                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                    <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                </div>
+
+                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                    <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                </div>
+
+                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                    <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                </div>
+
             </div>
         </div>
+
+
         <a href="#" class="partners__link text-semi-sm d-flex justify-content-center py-3 ">
             <img src="./icons/umbrella 2.svg" alt="umbrella">
             Как стать партнером
             <img src="./icons/arrow-right.svg" alt="arrow-right">
         </a>
+
     </section>
+
 
     <section class="cross_line">
         <div class="cross_line__left">
@@ -763,9 +1608,8 @@
         <h4 class="text-reg-lg text-center m-0 "> Следуйте инструкциям шаг за шагом и легко получите страховку!
         </h4>
 
-        <div class="how_work__items">
-
-            <div class="how_work__item">
+        <div class="how_work__items row">
+            <div class="how_work__item col-lg-3 col-md-6">
                 <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line ">
 
                 <div class="how_work__item__icon">
@@ -779,7 +1623,7 @@
                 </div>
             </div>
 
-            <div class="how_work__item">
+            <div class="how_work__item col-lg-3 col-md-6">
                 <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line ">
 
                 <div class="how_work__item__icon">
@@ -795,7 +1639,7 @@
                 </div>
             </div>
 
-            <div class="how_work__item">
+            <div class="how_work__item col-lg-3 col-md-6">
                 <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line ">
 
                 <div class="how_work__item__icon">
@@ -811,7 +1655,7 @@
                 </div>
             </div>
 
-            <div class="how_work__item">
+            <div class="how_work__item col-lg-3 col-md-6">
                 <!-- <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line "> -->
 
                 <div class="how_work__item__icon finish ">
