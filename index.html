@@ -16,7 +16,7 @@
 
 <body>
     <header class="position-relative">
-        <img src="./images/Pattern.png" class="position-absolute z-index-1 start-0 top-0" alt />
+        <img src="./images/Pattern.png" class="position-absolute z-index-1 start-0 top-0 w-md-100 " alt />
         <nav class="position-absolute top-0 start-0 end-0" id="myHeader">
             <div class="navbar__left">
                 <a href="./" class="navbar__logo">
@@ -64,7 +64,7 @@
             </div>
             <div class="navbar__right ms-auto">
 
-                <div class="dropdown  ">
+                <div class="dropdown nav__lng  ">
                     <button class="selected__lng  btn text-hover dropdown-toggle" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -95,7 +95,7 @@
                     <img src="./icons/phone-call.svg" alt="phone">
                     <span class="text-semi-sm d-none text-white d-xl-block ">Экстренный вызов</span>
                 </a>
-                <a href="./signIn.html" class="navbar__singIn box-shadow-sm rounded-circle-mb">
+                <a href="./signIn.html" class="navbar__singIn d-none d-sm-flex box-shadow-sm rounded-circle-mb">
                     <img src="./icons/user-square.svg" alt="user">
                     <span class="text-reg-sm d-none d-xl-block ">Войти</span>
                 </a>
@@ -107,71 +107,90 @@
             </div>
         </nav>
 
-        <section class="header">
+        <section class="header container ">
 
-            <!-- Slider main container -->
             <div class="swiper header-swiper ">
-                <!-- Additional required wrapper -->
+
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide slider ">
-                        <div class="slider__text">
-                            <h1 class="text-semi-5xl m-0 ">Путешествуйте с уверенностью!</h1>
-                            <h3 class="mb-4 mt-3 text-reg-xl  ">Страхование TRAVEL обеспечивает полную безопасность за
+                        <div
+                            class="slider__text d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-center align-items-md-start ">
+                            <h1 class="display-5 fw-bold text-center text-md-start m-0 ">Путешествуйте с уверенностью!
+                            </h1>
+                            <h3 class="mb-4 mt-3 text-reg-xl text-center text-md-start ">Страхование TRAVEL обеспечивает
+                                полную безопасность за
                                 рубежом
                                 для вашего спокойствия.</h3>
-                            <button class="slider__button m-0 button-primary text-semi-base ">
+                            <button class="slider__button button-md m-0 button-primary text-semi-base ">
                                 Купить полис
                                 <img src="./icons/arrow.svg" alt="arrow">
                             </button>
                         </div>
-                        <div class="slider__image">
-                            <img src="./images/header1.png" alt="header 1">
+                        <div class="slider__image d-none d-md-flex justify-content-end ">
+                            <div class="">
+                                <img src="./images/header1.png" alt="header 1" class="header-img">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide slider">
-                        <div class="slider__text">
-                            <h1 class="text-semi-5xl m-0 ">Путешествуйте с уверенностью!</h1>
-                            <h3 class="mb-4 mt-3 text-reg-xl  ">Страхование TRAVEL обеспечивает полную безопасность за
+                    <div class="swiper-slide slider ">
+                        <div
+                            class="slider__text d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-center align-items-md-start ">
+                            <h1 class="display-5 fw-bold text-center text-md-start m-0 ">Путешествуйте с уверенностью!
+                            </h1>
+                            <h3 class="mb-4 mt-3 text-reg-xl text-center text-md-start ">Страхование TRAVEL обеспечивает
+                                полную безопасность за
                                 рубежом
                                 для вашего спокойствия.</h3>
-                            <button class="slider__button m-0 button-primary text-semi-base ">
+                            <button class="slider__button button-md m-0 button-primary text-semi-base ">
                                 Купить полис
                                 <img src="./icons/arrow.svg" alt="arrow">
                             </button>
                         </div>
-                        <div class="slider__image">
-                            <img src="./images/header1.png" alt="header 1">
+                        <div class="slider__image d-none d-md-flex justify-content-end ">
+                            <div class="">
+                                <img src="./images/header1.png" alt="header 1" class="header-img">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide slider">
-                        <div class="slider__text">
-                            <h1 class="text-semi-5xl m-0 ">Путешествуйте с уверенностью!</h1>
-                            <h3 class="mb-4 mt-3 text-reg-xl  ">Страхование TRAVEL обеспечивает полную безопасность за
+                    <div class="swiper-slide slider ">
+                        <div
+                            class="slider__text d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-center align-items-md-start ">
+                            <h1 class="display-5 fw-bold text-center text-md-start m-0 ">Путешествуйте с уверенностью!
+                            </h1>
+                            <h3 class="mb-4 mt-3 text-reg-xl text-center text-md-start ">Страхование TRAVEL обеспечивает
+                                полную безопасность за
                                 рубежом
                                 для вашего спокойствия.</h3>
-                            <button class="slider__button m-0 button-primary text-semi-base ">
+                            <button class="slider__button button-md m-0 button-primary text-semi-base ">
                                 Купить полис
                                 <img src="./icons/arrow.svg" alt="arrow">
                             </button>
                         </div>
-                        <div class="slider__image">
-                            <img src="./images/header1.png" alt="header 1">
+                        <div class="slider__image d-none d-md-flex justify-content-end ">
+                            <div class="">
+                                <img src="./images/header1.png" alt="header 1" class="header-img">
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide slider">
-                        <div class="slider__text">
-                            <h1 class="text-semi-5xl m-0 ">Путешествуйте с уверенностью!</h1>
-                            <h3 class="mb-4 mt-3 text-reg-xl  ">Страхование TRAVEL обеспечивает полную безопасность за
+                    <div class="swiper-slide slider ">
+                        <div
+                            class="slider__text d-flex flex-column justify-content-center justify-content-md-start justify-content-lg-center align-items-center align-items-md-start ">
+                            <h1 class="display-5 fw-bold text-center text-md-start m-0 ">Путешествуйте с уверенностью!
+                            </h1>
+                            <h3 class="mb-4 mt-3 text-reg-xl text-center text-md-start ">Страхование TRAVEL обеспечивает
+                                полную безопасность за
                                 рубежом
                                 для вашего спокойствия.</h3>
-                            <button class="slider__button m-0 button-primary text-semi-base ">
+                            <button class="slider__button button-md m-0 button-primary text-semi-base ">
                                 Купить полис
                                 <img src="./icons/arrow.svg" alt="arrow">
                             </button>
                         </div>
-                        <div class="slider__image">
-                            <img src="./images/header1.png" alt="header 1">
+                        <div class="slider__image d-none d-md-flex justify-content-end ">
+                            <div class="">
+                                <img src="./images/header1.png" alt="header 1" class="header-img">
+                            </div>
                         </div>
                     </div>
 
@@ -198,69 +217,93 @@
 
             </div>
 
-            <!-- <div class="slider">
-                <div class="slider__text">
-                    <h1 class="text-semi-5xl m-0 ">Путешествуйте с уверенностью!</h1>
-                    <h3 class="mb-4 mt-3 text-reg-xl  ">Страхование TRAVEL обеспечивает полную безопасность за рубежом
-                        для вашего спокойствия.</h3>
-                    <button class="slider__button m-0 button-primary text-semi-base ">
-                        Купить полис
-                        <img src="./icons/arrow.svg" alt="arrow">
-                    </button>
-                </div>
-                <div class="slider__image">
-                    <img src="./images/header1.png" alt="header 1">
-                </div>
-            </div> -->
-
 
         </section>
 
 
         <div class="modal fade " id="navbar" tabindex="-1" aria-labelledby="navbarLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content p-4 ">
+            <div class="modal-dialog ">
+                <div class="modal-content m-2 p-4 ">
                     <div class="modal-header">
-                        <div class="modal-header__text">
-                            <div class="icon-secondary">
-                                <img src="./icons/shield-star.svg" alt="sheild">
-                            </div>
-                            <div class="">
-                                <h5 class="text-reg-sm m-0 ">Услуга</h5>
-                                <h4 class="text-semi-xl m-0">Оформления "Европротокола"</h4>
-                            </div>
-                        </div>
-                        <div class="modal-header__limit">
-                            <button type="button" class="modal-close " data-bs-dismiss="modal" aria-label="Close">
-                                <img src="./icons/close.svg" alt="close">
-                            </button>
-                        </div>
+
+                        <a href="./" class="navbar__logo">
+                            <img src="./icons/logo.svg" alt="logo">
+                            <h4>Epolis<span>Plus</span></h4>
+                        </a>
+
+                        <button type="button" class="modal-close  " data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./icons/close.svg" alt="close">
+                        </button>
 
                     </div>
-                    <div class="modal-body mt-3 d-flex ">
-                        <div class="modal-body__text gap-2 ">
+                    <div class="modal-body d-flex flex-column ">
 
-                            <h5 class="text-reg-sm m-0 ">Описание</h5>
+                        <ul class="navbar__links d-flex flex-column p-0 align-items-center m-0 my-3 ">
+                            <li class="">
+                                <a href="#" class="navbar__link text-hover ">
+                                    <img src="./icons/shield-chevron.svg" alt="shield">
+                                    <h3 class="text-semi-base">Гарантийный код</h3>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="navbar__link text-hover ">
+                                    <img src="./icons/calculator.svg" alt="shield">
+                                    <h3 class="text-semi-base">Калькулятор полисов</h3>
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="#" class="text-reg-base">
+                                    О нас
+                                </a>
+                                <div class="pb-5 d-none d-sm-block "></div>
+                            </li>
+                            <li class=" d-sm-none ">
+                                <a href="#" class="text-reg-base">
+                                    Как стать партнером
+                                </a>
+                                <div class="pb-5 d-none d-sm-block "></div>
+                            </li>
+                        </ul>
 
-                            <p class="mb-0 text-reg-base modal-body__text__item ">
-                                - Мы предоставляем услугу оформления европротокола, необходимого для решения
-                                юридических вопросов при дорожно-транспортных происшествиях.
-                            </p>
+                        <div
+                            class="border-top-dashed d-flex d-sm-none flex-column gap-3 justify-content-center align-items-center pt-3 ">
+                            <div class="">
 
-                            <p class="mb-0 text-reg-base modal-body__text__item ">
-                                - Наши специалисты помогут правильно и оперативно оформить все необходимые документы,
-                                чтобы обеспечить вашу защиту и законные интересы.
-                            </p>
+                                <div class="dropdown nav__lng d-none ">
+                                    <button class="selected__lng  btn text-hover dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
 
-                        </div>
-                        <div class="modal-body__price pl-3 ">
-                            <h5 class="text-reg-sm mb-1 ">Сумма оплаты</h5>
-                            <h4 class="text-semi-base d-flex gap-2 mb-3 ">
-                                <img src="./icons/coins.svg" alt="coin">
-                                150 000 сум
-                            </h4>
-                            <button class="button-primary box-shadow-sm w-100 py-2 ">Оформить</button>
+                                        <img src="./icons/russia.svg" alt="ru">
+                                        <span class="text-semi-sm">RU</span>
+                                        <img src="./icons/chevron-down.svg" alt="chevron">
+                                    </button>
 
+
+                                    <ul class="dropdown-menu language__lists box-shadow-sm "
+                                        style="min-width: auto; max-width: 88px; ">
+                                        <li class="" style="min-width: auto; max-width: 88px; ">
+                                            <button class=" dropdown-item language__list text-hover " type="button">
+                                                <img src="./icons/uzbekistán.svg" alt="ru">
+                                                <span class="text-semi-sm">UZ</span>
+                                            </button>
+                                        </li>
+                                        <li class="" style="min-width: auto; max-width: 88px; ">
+                                            <button class="dropdown-item language__list text-hover " type="button">
+                                                <img src="./icons/united kingdom.svg" alt="ru">
+                                                <span class="text-semi-sm">EN</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class=" ">
+
+                                <a href="./signIn.html" class="navbar__singIn box-shadow-sm">
+                                    <img src="./icons/user-square.svg" alt="user">
+                                    <span class="text-reg-sm ">Войти</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,35 +312,37 @@
 
     </header>
 
-    <section class="cross_line">
-        <div class="cross_line__left">
+    <section class="cross_line container ">
+        <div class=" d-flex align-items-center gap-4 mx-auto ">
+            <div class="cross_line__left">
 
+            </div>
+            <div class="cross_line__middle">
+                <img src="./icons/gray-logo.svg" alt="logo">
+            </div>
+            <div class="cross_line__right"></div>
         </div>
-        <div class="cross_line__middle">
-            <img src="./icons/gray-logo.svg" alt="logo">
-        </div>
-        <div class="cross_line__right"></div>
     </section>
 
-    <section class="calculator">
+    <section class="calculator container ">
         <h3 class="text-center text-semi-4xl mb-4 ">Калькулятор</h3>
-        <div class="calculator_btns mb-4 ">
-            <div class="calculator_btns__item  ">
+        <div class="calculator_btns flex-wrap mb-4 container ">
+            <div class="calculator_btns__item active ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4.66667 16.6667C4.66667 17.1087 4.84226 17.5326 5.15482 17.8452C5.46738 18.1577 5.89131 18.3333 6.33333 18.3333C6.77536 18.3333 7.19928 18.1577 7.51184 17.8452C7.8244 17.5326 8 17.1087 8 16.6667M4.66667 16.6667C4.66667 16.2246 4.84226 15.8007 5.15482 15.4881C5.46738 15.1756 5.89131 15 6.33333 15C6.77536 15 7.19928 15.1756 7.51184 15.4881C7.8244 15.8007 8 16.2246 8 16.6667M4.66667 16.6667H3V11.6667M8 16.6667H13M13 16.6667C13 17.1087 13.1756 17.5326 13.4882 17.8452C13.8007 18.1577 14.2246 18.3333 14.6667 18.3333C15.1087 18.3333 15.5326 18.1577 15.8452 17.8452C16.1577 17.5326 16.3333 17.1087 16.3333 16.6667M13 16.6667C13 16.2246 13.1756 15.8007 13.4882 15.4881C13.8007 15.1756 14.2246 15 14.6667 15C15.1087 15 15.5326 15.1756 15.8452 15.4881C16.1577 15.8007 16.3333 16.2246 16.3333 16.6667M16.3333 16.6667H18V13.3333C18 12.8913 17.8244 12.4674 17.5118 12.1548C17.1993 11.8423 16.7754 11.6667 16.3333 11.6667H15.5M3 11.6667L4.66667 7.49999H12.1667L15.5 11.6667M3 11.6667H15.5M10.5 11.6667V7.49999M3 4.99999L10.5 1.66666L18 4.99999"
                         stroke="#00A070" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <span class="text-semi-base">KACKO</span>
+                <span class="text-semi-base d-none d-sm-inline ">KACKO</span>
             </div>
-            <div class="calculator_btns__item active ">
+            <div class="calculator_btns__item  ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M4.66667 14.1667C4.66667 14.6087 4.84226 15.0326 5.15482 15.3452C5.46738 15.6577 5.89131 15.8333 6.33333 15.8333C6.77536 15.8333 7.19928 15.6577 7.51184 15.3452C7.8244 15.0326 8 14.6087 8 14.1667M4.66667 14.1667C4.66667 13.7246 4.84226 13.3007 5.15482 12.9882C5.46738 12.6756 5.89131 12.5 6.33333 12.5C6.77536 12.5 7.19928 12.6756 7.51184 12.9882C7.8244 13.3007 8 13.7246 8 14.1667M4.66667 14.1667H3V9.16667M8 14.1667H13M13 14.1667C13 14.6087 13.1756 15.0326 13.4882 15.3452C13.8007 15.6577 14.2246 15.8333 14.6667 15.8333C15.1087 15.8333 15.5326 15.6577 15.8452 15.3452C16.1577 15.0326 16.3333 14.6087 16.3333 14.1667M13 14.1667C13 13.7246 13.1756 13.3007 13.4882 12.9882C13.8007 12.6756 14.2246 12.5 14.6667 12.5C15.1087 12.5 15.5326 12.6756 15.8452 12.9882C16.1577 13.3007 16.3333 13.7246 16.3333 14.1667M16.3333 14.1667H18V10.8333C18 10.3913 17.8244 9.96738 17.5118 9.65482C17.1993 9.34226 16.7754 9.16667 16.3333 9.16667H15.5M3 9.16667L4.66667 5H12.1667L15.5 9.16667M3 9.16667H15.5M10.5 9.16667V5"
                         stroke="#737373" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <span class="text-semi-base">ОСАГО</span>
+                <span class="text-semi-base d-none d-sm-inline ">ОСАГО</span>
             </div>
             <div class="calculator_btns__item  ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,7 +351,7 @@
                         stroke="#737373" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <span class="text-semi-base">Путешествие</span>
+                <span class="text-semi-base d-none d-sm-inline ">Путешествие</span>
             </div>
             <div class="calculator_btns__item  ">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,7 +360,7 @@
                         stroke="#737373" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <span class="text-semi-base">Дополнительные услуги</span>
+                <span class="text-semi-base d-none d-sm-inline ">Дополнительные услуги</span>
             </div>
         </div>
 
@@ -618,7 +663,7 @@
             </div>
         </div> -->
 
-        <div class="calculator__cards tab-panel swiper kasko-swiper d-none ">
+        <div class="calculator__cards tab-panel swiper kasko-swiper ">
             <div class="swiper-wrapper ">
 
 
@@ -857,9 +902,9 @@
 
         </div>
 
-        <div class="container-mini tab-panel d-none osago">
+        <div class="container-mini tab-panel d-none osago ">
             <form class="row row-gap-3 pl-3 pb-3 max-w-744 mx-auto ">
-                <div class="col-md-3 ">
+                <div class="col-lg-3 col-sm-5 ">
                     <label class="text-reg-sm text-gray w-100">
                         Гос номер <span class="input_important">*</span> <br>
                         <div class="w-100">
@@ -870,19 +915,19 @@
                     </label>
                 </div>
 
-                <div class="col-md-4 col-sm-9 col-8">
+                <div class="col-lg-4 col-sm-7">
 
-                    <label class="text-reg-sm text-gray ">
+                    <label class="text-reg-sm text-gray w-100 ">
                         Серия и номер тех. паспорта <span class="input_important">*</span> <br>
                         <div class="d-flex gap-2 ">
 
-                            <div class="" style="width: 64px;">
+                            <div class="w-25">
                                 <input type="text" class="form_input text-reg-base valid box-shadow-sm mt-1 w-100 "
                                     placeholder="AAF">
                                 <h6 class="text-reg-xs m-0  mt-1 error-message  ">Заполните поле</h6>
 
                             </div>
-                            <div class="">
+                            <div class="w-75">
                                 <input type="text" class="form_input text-reg-base valid box-shadow-sm w-100 mt-1 mr-1 "
                                     placeholder="0000000">
                                 <h6 class="text-reg-xs m-0  mt-1 error-message ">Заполните поле</h6>
@@ -893,7 +938,7 @@
                     </label>
                 </div>
 
-                <div class="col-md-3 ">
+                <div class="col-lg-3 col-md-10 col-sm-9 col-8 ">
                     <label class="text-reg-sm text-gray w-100">
                         Гос номер <span class="input_important">*</span> <br>
                         <!-- <h6 class="text-reg-xs m-0 mt-1 error-message">Заполните поле</h6> -->
@@ -909,8 +954,9 @@
 
                 <div class="col-md-2 col-sm-3 col-4">
                     <div class="h-64px">
-                        <button type="submit" class="button-primary button-sm text-semi-base mt-4  ">
-                            <img src="./icons/search.svg" alt="search">
+                        <button type="submit"
+                            class="button-primary button-sm text-semi-base mt-4 w-100 d-flex align-items-center justify-content-center gap-2  ">
+                            <img src="./icons/search.svg" alt="search" class="d-none d-sm-block ">
                             Поиск
                         </button>
                     </div>
@@ -919,7 +965,7 @@
             </form>
 
 
-            <section class="partners mt-64px ">
+            <section class="partners mt-5 ">
                 <h5 class="text-center text-reg-base py-3 ">Наши страховые партнеры</h5>
                 <div class="swiper partners-swiper">
                     <div class="swiper-wrapper ">
@@ -952,11 +998,11 @@
                 </div> -->
             </section>
 
-            <div class=" ">
+            <div class=" d-none ">
                 <h3 class="text-semi-xl m-0 ">Результаты</h3>
 
                 <div
-                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    class=" flex-column flex-sm-row d-flex gap-2 justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
                     <div class="px-1">
                         <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
                     </div>
@@ -968,7 +1014,7 @@
                 </div>
 
                 <div
-                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    class="flex-column flex-sm-row d-flex gap-2 justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
                     <div class="px-1">
                         <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
                     </div>
@@ -981,10 +1027,10 @@
             </div>
         </div>
 
-        <div class="container-mini tab-panel journey">
+        <div class="container-mini tab-panel d-none journey">
 
             <form class=" container-mini row row-gap-3 pl-3 max-w-744 mx-auto ">
-                <div class="col-6 ">
+                <div class="col-md-6 col-12 ">
                     <label class="text-reg-sm text-light-black w-100 ">
                         Страны <span class="input_important">*</span> <br>
                         <div class="w-100 position-relative">
@@ -1005,7 +1051,7 @@
                     </label>
                 </div>
 
-                <div class="col-6 ">
+                <div class="col-md-6 col-12 ">
                     <label class="text-reg-sm text-light-black w-100">
                         Тип полиса <span class="input_important">*</span> <br>
                     </label>
@@ -1018,7 +1064,7 @@
                     </select>
                 </div>
 
-                <div class="col-5">
+                <div class="col-lg-5 col-12 col-sm-4 ">
                     <label class="text-reg-sm w-100 text-light-black ">
                         Дата рождения <span class="input_important">*</span> <br>
                         <div class="w-100">
@@ -1029,7 +1075,7 @@
                     </label>
                 </div>
 
-                <div class="col-5">
+                <div class="col-lg-5 col-12 col-sm-4 ">
                     <label class="text-reg-sm w-100 text-light-black ">
                         Дата рождения <span class="input_important">*</span> <br>
                         <div class="w-100">
@@ -1040,7 +1086,7 @@
                     </label>
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-12 col-sm-4 ">
 
                     <label class="text-reg-sm w-100 text-light-black ">
                         Кол-во дней <span class="input_important">*</span> <br>
@@ -1116,11 +1162,11 @@
                 </div> -->
             </section>
 
-            <div class="mt-5 pt-3 border-top-dashed ">
+            <div class="mt-5 pt-3 border-top-dashed d-none ">
                 <h3 class="text-semi-xl m-0 ">Результаты</h3>
 
                 <div
-                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    class="flex-column flex-sm-row d-flex gap-2 justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
                     <div class="px-1">
                         <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
                     </div>
@@ -1132,7 +1178,7 @@
                 </div>
 
                 <div
-                    class="d-flex justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
+                    class="flex-column flex-sm-row d-flex gap-2 justify-content-between align-items-center my-3 py-14px px-3 box-shadow-sm bg-white rounded-sm border-base ">
                     <div class="px-1">
                         <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
                     </div>
@@ -1146,9 +1192,11 @@
         </div>
 
         <div class=" tab-panel services mx-auto d-none">
-            <div class="discount d-flex gap-2 bg-light-secondary max-w-fit button-sm rounded-sm mx-auto ">
+            <div
+                class="discount d-flex flex-column flex-sm-row align-items-center gap-2 bg-light-secondary max-w-fit button-sm rounded-sm mx-auto ">
                 <img src="./icons/gift.svg" alt="gift-icon">
-                <h4 class="text-reg-base m-0 ">Оформляя более 2 услуг <span class="text-semi-base text-secondary ">Вы
+                <h4 class="text-reg-base m-0 text-center ">Оформляя более 2 услуг <br class="d-sm-none"> <span
+                        class="text-semi-base text-secondary ">Вы
                         получаете скидку 20%</span></h4>
             </div>
 
@@ -1288,7 +1336,7 @@
                 </div>
             </div>
 
-            <div class="border-base mt-3 box-shadow-sm p-3 max-w-544 rounded-sm ">
+            <div class="border-base d-none mt-3 box-shadow-sm p-3 max-w-544 rounded-sm ">
                 <div class="">
                     <h4 class="text-reg-base pb-1 mb-2 ">Выбранные услуги:</h4>
 
@@ -1467,219 +1515,236 @@
 
     </section>
 
-    <section class="download_app ">
-        <img src="./images/double-phone.png" alt="phones">
-        <div class="download_app__text ">
-            <div class="">
-                <h3 class="text-semi-xl title m-0 ">Cкачай приложение</h3>
-                <h3 class="text-semi-xl ">Доступно для Android и iOS</h3>
-            </div>
-            <div class="apps">
-                <div class="apps__item box-shadow-sm ">
-                    <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
-                    <div class="">
-                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
-                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+    <section class="download_app container ">
+        <div
+            class="download_app__box container-mini d-flex justify-content-center align-items-center flex-column-reverse flex-sm-row rounded-sm pt-3 position-relative ">
+
+            <img src="./icons/download-pattern.svg" alt="pattern"
+                class="position-absolute  top-0 start-0 w-100 z-0 d-none d-sm-block ">
+            <img src="./images/double-phone.png" alt="phones" class="z-1 max-w-fit ">
+            <div class="download_app__text ">
+                <div class="">
+                    <h3 class="text-semi-xl text-primary text-center text-sm-start m-0 z-1 ">Cкачай приложение</h3>
+                    <h3 class="text-semi-xl z-1 text-center text-sm-start ">Доступно для Android и iOS</h3>
+                </div>
+                <div class="apps">
+                    <div class="apps__item box-shadow-sm z-1 ">
+                        <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
+                        <div class="">
+                            <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                            <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                        </div>
+                    </div>
+                    <div class="apps__item box-shadow-sm z-1 ">
+                        <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
+                        <div class="">
+                            <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                            <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="apps__item box-shadow-sm ">
-                    <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
-                    <div class="">
-                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
-                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutUs container  ">
+        <div class="d-flex gap-4 flex-column flex-lg-row">
+
+            <div class="aboutUs__left col-lg-8 col-xl-7 ">
+                <div class="aboutUs__left__icon d-none d-md-block ">
+                    <img src="./icons/logo.svg" alt="logo" width="72px" height="74px">
+                </div>
+                <div class="aboutUs__left__text">
+
+                    <h5 class="text-semi-xl text-center text-sm-start ">О нас</h5>
+
+                    <h4 class="text-semi-4xl text-center text-sm-start mb-4 fs-2 line-h-initial "><span
+                            style="color: #00a070;">Epolis<span style="color: #dc3055;">Plus</span></span> - это
+                        команда, объединенная идеей сделать
+                        продажи
+                        страховых <br> продуктов эффективнее</h4>
+
+                    <div class="aboutUs__left__bottom__text ">
+                        <div class="secondary_line d-none d-sm-block "></div>
+                        <p class="text-reg-lg m-0 text-center text-sm-start ">Позволяет быстро запускать направления,
+                            генерирующие дополнительный
+                            доход, и заметно увеличивать
+                            рентабельность текущих. </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xl-1 d-none d-xl-block "></div>
+
+            <div class="aboutUs__right col-xl-4 col-lg-4 ">
+                <div class="aboutUs__right__item w-100 ">
+                    <div class="icon-secondary">
+                        <img src="./icons/shield-star.svg" alt="sheild">
+                    </div>
+                    <div class="aboutUs__right__text">
+                        <h5 class="text-semi-xl m-0 ">5 лет</h5>
+                        <p class="text-reg-base m-0 ">мы развиваем иншуртех-решения в автоотрасли и строительстве</p>
+                    </div>
+                </div>
+                <div class="aboutUs__right__item w-100 ">
+                    <div class="icon-secondary">
+                        <img src="./icons/users-group.svg" alt="users-group">
+                    </div>
+                    <div class="aboutUs__right__text">
+                        <h5 class="text-semi-xl m-0 ">170+ наших сотрудников</h5>
+                        <p class="text-reg-base m-0 ">делают свой вклад в развитие и внедрение информационных технологий
+                            в
+                            страхование</p>
+                    </div>
+                </div>
+                <div class="aboutUs__right__item w-100 ">
+                    <div class="icon-secondary">
+                        <img src="./icons/script.svg" alt="script">
+                    </div>
+                    <div class="aboutUs__right__text">
+                        <h5 class="text-semi-xl m-0 ">30 000+ полисов</h5>
+                        <p class="text-reg-base m-0 ">ежемесячно оформляется через EpolisPlus</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cross_line">
-        <div class="cross_line__left">
 
-        </div>
-        <div class="cross_line__middle">
-            <img src="./icons/gray-logo.svg" alt="logo">
-        </div>
-        <div class="cross_line__right"></div>
-    </section>
+    <section class="partners container mt-64px pb-lg-5 mb-5 ">
+        <div class="container-mini mx-auto border-base rounded-sm px-3 ">
+            <h5 class="text-center text-reg-base py-3 ">Наши страховые партнеры</h5>
+            <div class="swiper partners-swiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                    </div>
 
-    <section class="aboutUs flex-column flex-md-row ">
-        <div class="aboutUs__left">
-            <div class="aboutUs__left__icon">
-                <img src="./icons/logo.svg" alt="logo" width="72px" height="74px">
-            </div>
-            <div class="aboutUs__left__text">
+                    <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
 
-                <h5 class="text-semi-xl">О нас</h5>
+                    <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
+                    </div>
 
-                <h4 class="text-semi-4xl mb-4 "><span style="color: #00a070;">Epolis<span
-                            style="color: #dc3055;">Plus</span></span> - это команда, объединенная идеей сделать продажи
-                    страховых <br> продуктов эффективнее</h4>
+                    <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
+                        <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
+                    </div>
 
-                <div class="aboutUs__left__bottom__text ">
-                    <div class="secondary_line"></div>
-                    <p class="text-reg-lg m-0 ">Позволяет быстро запускать направления, генерирующие дополнительный
-                        доход, и заметно увеличивать
-                        рентабельность текущих. </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="aboutUs__right">
-            <div class="aboutUs__right__item">
-                <div class="icon-secondary">
-                    <img src="./icons/shield-star.svg" alt="sheild">
-                </div>
-                <div class="aboutUs__right__text">
-                    <h5 class="text-semi-xl m-0 ">5 лет</h5>
-                    <p class="text-reg-base m-0 ">мы развиваем иншуртех-решения в автоотрасли и строительстве</p>
                 </div>
             </div>
-            <div class="aboutUs__right__item">
-                <div class="icon-secondary">
-                    <img src="./icons/users-group.svg" alt="users-group">
-                </div>
-                <div class="aboutUs__right__text">
-                    <h5 class="text-semi-xl m-0 ">170+ наших сотрудников</h5>
-                    <p class="text-reg-base m-0 ">делают свой вклад в развитие и внедрение информационных технологий в
-                        страхование</p>
-                </div>
-            </div>
-            <div class="aboutUs__right__item">
-                <div class="icon-secondary">
-                    <img src="./icons/script.svg" alt="script">
-                </div>
-                <div class="aboutUs__right__text">
-                    <h5 class="text-semi-xl m-0 ">30 000+ полисов</h5>
-                    <p class="text-reg-base m-0 ">ежемесячно оформляется <br> через EpolisPlus</p>
-                </div>
-            </div>
+
+
+            <a href="#" class="partners__link text-semi-sm d-flex justify-content-center py-3 ">
+                <img src="./icons/umbrella 2.svg" alt="umbrella">
+                Как стать партнером
+                <img src="./icons/arrow-right.svg" alt="arrow-right">
+            </a>
+
+
         </div>
     </section>
 
 
-    <section class="partners mt-64px ">
-        <h5 class="text-center text-reg-base py-3 ">Наши страховые партнеры</h5>
-        <div class="swiper partners-swiper">
-            <div class="swiper-wrapper ">
-                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
-                    <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
-                </div>
-
-                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
-                    <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
-                </div>
-
-                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
-                    <img src="./icons/ingo_uzbekistan.svg" alt="ingo_uzbekistan">
-                </div>
-
-                <div class="swiper-slide partners__logos__item py-3 d-flex justify-content-center ">
-                    <img src="./icons/kapital_sugurta.svg" alt="kapital_sugurta">
-                </div>
+    <section class="cross_line container ">
+        <div class=" d-flex align-items-center gap-4 mx-auto ">
+            <div class="cross_line__left">
 
             </div>
+            <div class="cross_line__middle">
+                <img src="./icons/gray-logo.svg" alt="logo">
+            </div>
+            <div class="cross_line__right"></div>
         </div>
-
-
-        <a href="#" class="partners__link text-semi-sm d-flex justify-content-center py-3 ">
-            <img src="./icons/umbrella 2.svg" alt="umbrella">
-            Как стать партнером
-            <img src="./icons/arrow-right.svg" alt="arrow-right">
-        </a>
-
-    </section>
-
-
-    <section class="cross_line">
-        <div class="cross_line__left">
-
-        </div>
-        <div class="cross_line__middle">
-            <img src="./icons/gray-logo.svg" alt="logo">
-        </div>
-        <div class="cross_line__right"></div>
     </section>
 
 
 
-    <div class="how_work">
-        <h3 class="how_work__title text-semi-4xl text-center ">Как это работает?</h3>
-        <h4 class="text-reg-lg text-center m-0 "> Следуйте инструкциям шаг за шагом и легко получите страховку!
-        </h4>
+    <section class="how_work container ">
+        <div class="">
 
-        <div class="how_work__items row">
-            <div class="how_work__item col-lg-3 col-md-6">
-                <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line ">
+            <h3 class="how_work__title text-semi-4xl fs-2 text-center ">Как это работает?</h3>
+            <h4 class="text-reg-lg text-center m-0 "> Следуйте инструкциям шаг за шагом и легко получите страховку!
+            </h4>
 
-                <div class="how_work__item__icon">
-                    <img src="./icons/pencil-check.svg" alt="pencil-check">
+            <div class="how_work__items row row-gap-4 ">
+                <div class="how_work__item col-lg-3 col-sm-6">
+                    <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line d-none d-sm-block ">
+
+                    <div class="how_work__item__icon">
+                        <img src="./icons/pencil-check.svg" alt="pencil-check">
+                    </div>
+
+                    <div class="how_work__item__text text-center ">
+                        <h5 class="text-semi-sm">Шаг 1</h5>
+                        <h4 class="text-semi-xl mb-1 ">Введите свои данные</h4>
+                        <p class="text-reg-base m-0 ">Введите данные о вашем автомобиле и личную информацию.</p>
+                    </div>
                 </div>
 
-                <div class="how_work__item__text text-center ">
-                    <h5 class="text-semi-sm">Шаг 1</h5>
-                    <h4 class="text-semi-xl mb-1 ">Введите свои данные</h4>
-                    <p class="text-reg-base m-0 ">Введите данные о вашем автомобиле и личную информацию.</p>
-                </div>
-            </div>
+                <div class="how_work__item col-lg-3 col-sm-6">
+                    <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line d-none d-lg-block ">
 
-            <div class="how_work__item col-lg-3 col-md-6">
-                <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line ">
+                    <div class="how_work__item__icon">
+                        <img src="./icons/scale.svg" alt="scale">
+                    </div>
 
-                <div class="how_work__item__icon">
-                    <img src="./icons/scale.svg" alt="scale">
-                </div>
-
-                <div class="how_work__item__text text-center ">
-                    <h5 class="text-semi-sm">Шаг 2</h5>
-                    <h4 class="text-semi-xl mb-1 ">Сравните предложения</h4>
-                    <p class="text-reg-base m-0 ">Просмотрите предложения от разных страховых компаний и выберите
-                        лучший
-                        вариант.</p>
-                </div>
-            </div>
-
-            <div class="how_work__item col-lg-3 col-md-6">
-                <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line ">
-
-                <div class="how_work__item__icon">
-                    <img src="./icons/credit-card.svg" alt="credit-card">
+                    <div class="how_work__item__text text-center ">
+                        <h5 class="text-semi-sm">Шаг 2</h5>
+                        <h4 class="text-semi-xl mb-1 ">Сравните предложения</h4>
+                        <p class="text-reg-base m-0 ">Просмотрите предложения от разных страховых компаний и выберите
+                            лучший
+                            вариант.</p>
+                    </div>
                 </div>
 
-                <div class="how_work__item__text text-center ">
-                    <h5 class="text-semi-sm">Шаг 3</h5>
-                    <h4 class="text-semi-xl mb-1 ">Выберите способ оплаты</h4>
-                    <p class="text-reg-base m-0 ">Определитесь со сроком страхования и выберите удобный способ
-                        оплаты.
-                    </p>
+                <div class="how_work__item col-lg-3 col-sm-6">
+                    <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line d-none d-sm-block ">
+
+                    <div class="how_work__item__icon">
+                        <img src="./icons/credit-card.svg" alt="credit-card">
+                    </div>
+
+                    <div class="how_work__item__text text-center ">
+                        <h5 class="text-semi-sm">Шаг 3</h5>
+                        <h4 class="text-semi-xl mb-1 ">Выберите способ оплаты</h4>
+                        <p class="text-reg-base m-0 ">Определитесь со сроком страхования и выберите удобный способ
+                            оплаты.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="how_work__item col-lg-3 col-md-6">
-                <!-- <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line "> -->
+                <div class="how_work__item col-lg-3 col-sm-6">
+                    <!-- <img src="./icons/arrow-line.svg" alt="arrow-line" class="arrow_line "> -->
 
-                <div class="how_work__item__icon finish ">
-                    <img src="./icons/check.svg" alt="check">
-                </div>
+                    <div class="how_work__item__icon finish ">
+                        <img src="./icons/check.svg" alt="check">
+                    </div>
 
-                <div class="how_work__item__text text-center ">
-                    <h5 class="text-semi-sm">Готово!</h5>
-                    <h4 class="text-semi-xl mb-1 ">Получите полис онлайн</h4>
-                    <p class="text-reg-base m-0 ">Совершите оплату и получите полис на свой номер телефона или в
-                        профиль.</p>
+                    <div class="how_work__item__text text-center ">
+                        <h5 class="text-semi-sm">Готово!</h5>
+                        <h4 class="text-semi-xl mb-1 ">Получите полис онлайн</h4>
+                        <p class="text-reg-base m-0 ">Совершите оплату и получите полис на свой номер телефона или в
+                            профиль.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+    </section>
 
     <footer class="position-relative">
 
-        <img src="./images/footer-pattern.png" alt="footer-pattern" class="position-absolute start-0 bottom-0 z-n1">
+        <img src="./images/footer-pattern.png" alt="footer-pattern"
+            class="position-absolute start-0 bottom-0 z-n1 w-md-100">
 
-        <div class="footer">
+        <div class="footer container ">
 
 
-            <div class="d-flex justify-content-between align-items-center ">
+            <div class="d-flex flex-wrap justify-content-between flex-column flex-sm-row row-gap-4 align-items-center ">
+
                 <a href="./">
                     <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
                 </a>
@@ -1701,27 +1766,25 @@
                     </div>
                 </div>
 
-                <div class="social_media">
-                    <div class="d-flex gap-2 ">
-                        <a href="#" class="white-icon box-shadow-sm ">
-                            <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
-                        </a>
-                        <a href="#" class="white-icon box-shadow-sm ">
-                            <img src="./icons/instagram.svg" alt="instagram">
-                        </a>
-                    </div>
-                    <button class="button-primary ">
+                <div class="social_media gap-3 gap-sm-0 ">
+                    <a href="#" class="white-icon box-shadow-sm ">
+                        <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
+                    </a>
+                    <a href="#" class="white-icon box-shadow-sm ms-2 me-4 ">
+                        <img src="./icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="button-primary button-md btn-footer d-flex gap-2 ">
                         <img src="./icons/phone-check.svg" alt="phone-check" class="">
-                        Позвонить сейчас
-                    </button>
+                        <span class="d-none d-sm-block text-semi-base text-white ">Позвонить сейчас</span>
+                    </a>
 
                 </div>
             </div>
 
-            <div class=" footer__down d-flex justify-content-between align-items-center ">
+            <div class=" footer__down d-flex justify-content-between flex-column flex-md-row row-gap-4 align-items-center ">
                 <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
 
-                <div class="d-flex justify-content-between align-items-center gap-4 ">
+                <div class="d-flex justify-content-between flex-column flex-md-row align-items-center row-gap-2 gap-4 ">
                     <p class="text-reg-sm m-0">Политика конфиденциальности</p>
                     <p class="text-reg-sm m-0">Условия обслуживания</p>
                 </div>

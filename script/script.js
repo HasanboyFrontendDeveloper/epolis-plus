@@ -26,23 +26,51 @@ const headerSwiper = new Swiper(".header-swiper", {
 });
 
 const kaskoSwiper = new Swiper(".kasko-swiper", {
-  slidesPerView: 3,
+  centeredSlides: false,
+  slidesPerView: 1,
   spaceBetween: 16,
-  freeMode: true,
   grabCursor: true,
+  loop: false,
+  speed: 850,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 25,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+  },
 });
 
 const partnersSwiper = new Swiper(".partners-swiper", {
-  slidesPerView: 2,
-  spaceBetween: 0,
-  grabCursor: true,
+  centeredSlides: false,
   loop: true,
-
-  // Auto play
+  grabCursor: true,
   autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+      delay: 3000,
   },
+  breakpoints: {
+      // when window width is >= 320px
+      320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+      },
+      // when window width is >= 576px
+      576: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+      }
+  }
+
 });
 
 // Payment Method
@@ -100,7 +128,7 @@ if (document.getElementById("myHeader")) {
   };
 
   let header = document.getElementById("myHeader");
-  let sticky = header.offsetTop ;
+  let sticky = header.offsetTop;
 
   console.log(sticky);
 
