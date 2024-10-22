@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
 
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/breakpoints.css">
+    
 </head>
 
 <body>
 
-    <nav>
+    <nav class="position-absolute top-0 start-0 end-0" id="myHeader">
         <div class="navbar__left">
             <a href="./" class="navbar__logo">
                 <img src="./icons/logo.svg" alt="logo">
                 <h4>Epolis<span>Plus</span></h4>
             </a>
 
-            <ul class="navbar__links">
+            <ul class="navbar__links d-none d-lg-flex p-0 ">
                 <li class="">
                     <a href="#" class="navbar__link text-hover ">
                         <img src="./icons/shield-chevron.svg" alt="shield">
@@ -60,9 +62,9 @@
             </ul>
 
         </div>
-        <div class="navbar__right">
+        <div class="navbar__right ms-auto">
 
-            <div class="dropdown">
+            <div class="dropdown nav__lng  ">
                 <button class="selected__lng  btn text-hover dropdown-toggle" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
 
@@ -88,19 +90,113 @@
                 </ul>
             </div>
 
-            <button type="button" class=" navbar__right-button text-semi-sm box-shadow-sm ">
+            <a href="./emergency-call.html"
+                class=" navbar__right-button d-flex gap-2 align-items-center rounded-circle-mb box-shadow-sm ">
                 <img src="./icons/phone-call.svg" alt="phone">
-                Экстренный вызов
-            </button>
-            <a href="#" class="navbar__singIn box-shadow-sm text-reg-sm ">
-                <img src="./icons/user-square.svg" alt="user">
-                Войти
+                <span class="text-semi-sm d-none text-white d-xl-block ">Экстренный вызов</span>
             </a>
+            <a href="./signIn.html" class="navbar__singIn d-none d-sm-flex box-shadow-sm rounded-circle-mb">
+                <img src="./icons/user-square.svg" alt="user">
+                <span class="text-reg-sm d-none d-xl-block ">Войти</span>
+            </a>
+
+            <button class="p-10px button-white box-shadow-sm rounded-circle-mb d-lg-none " data-bs-toggle="modal"
+                data-bs-target="#navbar" style="line-height: 0;"><img src="./icons/menu-burger.svg" alt="menu"
+                    width="16px"></button>
 
         </div>
     </nav>
 
-    <section class="container-mini my-5 ">
+
+    <div class="modal fade " id="navbar" tabindex="-1" aria-labelledby="navbarLabel" aria-hidden="true">
+        <div class="modal-dialog max-w-full d-block m-0 p-2 ">
+            <div class="modal-content p-4 ">
+                <div class="modal-header">
+
+                    <a href="./" class="navbar__logo">
+                        <img src="./icons/logo.svg" alt="logo">
+                        <h4>Epolis<span>Plus</span></h4>
+                    </a>
+
+                    <button type="button" class="modal-close  " data-bs-dismiss="modal" aria-label="Close">
+                        <img src="./icons/close.svg" alt="close">
+                    </button>
+
+                </div>
+                <div class="modal-body d-flex flex-column ">
+
+                    <ul class="navbar__links d-flex flex-column p-0 align-items-center m-0 my-3 ">
+                        <li class="">
+                            <a href="#" class="navbar__link text-hover ">
+                                <img src="./icons/shield-chevron.svg" alt="shield">
+                                <h3 class="text-semi-base">Гарантийный код</h3>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="navbar__link text-hover ">
+                                <img src="./icons/calculator.svg" alt="shield">
+                                <h3 class="text-semi-base">Калькулятор полисов</h3>
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="#" class="text-reg-base">
+                                О нас
+                            </a>
+                            <div class="pb-5 d-none d-sm-block "></div>
+                        </li>
+                        <li class=" d-sm-none ">
+                            <a href="#" class="text-reg-base">
+                                Как стать партнером
+                            </a>
+                            <div class="pb-5 d-none d-sm-block "></div>
+                        </li>
+                    </ul>
+
+                    <div
+                        class="border-top-dashed d-flex d-sm-none flex-column gap-3 justify-content-center align-items-center pt-3 ">
+                        <div class="">
+
+                            <div class="dropdown nav__lng d-none ">
+                                <button class="selected__lng  btn text-hover dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <img src="./icons/russia.svg" alt="ru">
+                                    <span class="text-semi-sm">RU</span>
+                                    <img src="./icons/chevron-down.svg" alt="chevron">
+                                </button>
+
+
+                                <ul class="dropdown-menu language__lists box-shadow-sm "
+                                    style="min-width: auto; max-width: 88px; ">
+                                    <li class="" style="min-width: auto; max-width: 88px; ">
+                                        <button class=" dropdown-item language__list text-hover " type="button">
+                                            <img src="./icons/uzbekistán.svg" alt="ru">
+                                            <span class="text-semi-sm">UZ</span>
+                                        </button>
+                                    </li>
+                                    <li class="" style="min-width: auto; max-width: 88px; ">
+                                        <button class="dropdown-item language__list text-hover " type="button">
+                                            <img src="./icons/united kingdom.svg" alt="ru">
+                                            <span class="text-semi-sm">EN</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <a href="./signIn.html" class="navbar__singIn justify-content-center box-shadow-sm w-100 ">
+                            <img src="./icons/user-square.svg" alt="user">
+                            <span class="text-reg-sm ">Войти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container-mini mt-5 pt-5 ">
         <div class="d-flex flex-column align-items-center ">
             <div class="mb-3">
                 <img src="./icons/phone-call-secondary.svg" alt="phone-call-secondary" class=" ">
@@ -113,103 +209,108 @@
 
 
         <div class="data-table box-shadow-sm ">
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Эвакуация автомобиля</h5>
                 <h3 class="text-semi-base m-0 ">275 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Содействие в сборе документов для страхового возмещения</h5>
                 <h3 class="text-semi-base m-0 ">400 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Оформления "Европротокола"</h5>
                 <h3 class="text-semi-base m-0 ">450 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Подвоз топлива</h5>
                 <h3 class="text-semi-base m-0 ">100 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Замена колеса</h5>
                 <h3 class="text-semi-base m-0 ">110 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Зарядка и запуск аккумулятора </h5>
                 <h3 class="text-semi-base m-0 ">125 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Диагностика при невозможности запуска транспортного средства </h5>
                 <h3 class="text-semi-base m-0 ">250 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Открытие автомобиля при блокировке или оставлении ключей внутри </h5>
                 <h3 class="text-semi-base m-0 ">200 000 сум</h3>
             </div>
-            <div class="data-table-row">
+            <div class="flex-column flex-sm-row row-gap-1 data-table-row">
                 <h5 class="text-reg-base m-0 ">Замена бензонасоса при неисправности </h5>
                 <h3 class="text-semi-base m-0 ">300 000 сум</h3>
             </div>
         </div>
 
 
-        <button class="button-secondary button-md text-semi-base d-flex gap-2 align-items-center justify-content-center w-100 mt-5 ">
+        <button
+            class="button-secondary button-md text-semi-base d-flex gap-2 align-items-center justify-content-center w-100 mt-5 ">
             <img src="./icons/phone-call.svg" alt="phone-call">
             Экстренный вызов
         </button>
 
     </section>
 
-    <footer class="footer position-relative">
+    <footer class="position-relative">
+
+        <div class="footer container pt-5 mt-5 ">
 
 
-        <div class="d-flex justify-content-between align-items-center ">
-            <a href="./">
-                <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
-            </a>
+            <div class="d-flex flex-wrap justify-content-between flex-column flex-sm-row row-gap-4 align-items-center ">
 
-            <div class="apps m-0 ">
-                <div class="apps__item box-shadow-sm ">
-                    <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
-                    <div class="">
-                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
-                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                <a href="./">
+                    <img src="./icons/EpolisPlus_Logo.svg" alt="EpolisPlus_Logo">
+                </a>
+
+                <div class="apps m-0 ">
+                    <div class="apps__item box-shadow-sm ">
+                        <img src="./icons/apple.svg" alt="apple" width="21px" height="25px">
+                        <div class="">
+                            <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                            <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                        </div>
+                    </div>
+                    <div class="apps__item box-shadow-sm ">
+                        <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
+                        <div class="">
+                            <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
+                            <h3 class="text-semi-lg mb-0 ">App Store</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="apps__item box-shadow-sm ">
-                    <img src="./icons/google-play.svg" alt="apple" width="21px" height="25px">
-                    <div class="">
-                        <h6 class="text-reg-xxs mb-0  ">Download on the</h6>
-                        <h3 class="text-semi-lg mb-0 ">App Store</h3>
-                    </div>
-                </div>
-            </div>
 
-            <div class="social_media">
-                <div class="d-flex gap-2 ">
+                <div class="social_media gap-3 gap-sm-0 ">
                     <a href="#" class="white-icon box-shadow-sm ">
                         <img src="./icons/telegram.svg" alt="telegram" class="m-0 p-0">
                     </a>
-                    <a href="#" class="white-icon box-shadow-sm ">
+                    <a href="#" class="white-icon box-shadow-sm ms-sm-2 me-sm-4 ">
                         <img src="./icons/instagram.svg" alt="instagram">
                     </a>
+                    <a href="#" class="button-primary button-md btn-footer d-flex gap-2 ">
+                        <img src="./icons/phone-check.svg" alt="phone-check" class="">
+                        <span class="d-none d-sm-block text-semi-base text-white ">Позвонить сейчас</span>
+                    </a>
+
                 </div>
-                <button class="button-primary ">
-                    <img src="./icons/phone-check.svg" alt="phone-check" class="">
-                    Позвонить сейчас
-                </button>
-
-            </div>
-        </div>
-
-        <div class=" footer__down d-flex justify-content-between align-items-center ">
-            <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
-
-            <div class="d-flex justify-content-between align-items-center gap-4 ">
-                <p class="text-reg-sm m-0">Политика конфиденциальности</p>
-                <p class="text-reg-sm m-0">Условия обслуживания</p>
             </div>
 
-            <img src="./icons/footer-image.svg" alt="footer-image">
+            <div
+                class=" footer__down d-flex justify-content-between flex-column flex-md-row row-gap-4 align-items-center ">
+                <p class="text-reg-sm m-0 ">© EpolisPlus 2024. Все права защищены.</p>
+
+                <div class="d-flex justify-content-between flex-column flex-md-row align-items-center row-gap-2 gap-4 ">
+                    <p class="text-reg-sm m-0">Политика конфиденциальности</p>
+                    <p class="text-reg-sm m-0">Условия обслуживания</p>
+                </div>
+
+                <img src="./icons/footer-image.svg" alt="footer-image">
+
+            </div>
 
         </div>
 

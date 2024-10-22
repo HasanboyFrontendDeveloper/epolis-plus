@@ -39,15 +39,15 @@
     left: 88% !important;
   }
 
-  .header .header-img{
+  .header .header-img {
     width: 283px;
   }
 
-  .header .slider__text{
+  .header .slider__text {
     flex: 60%;
   }
 
-  .header .slider__image{
+  .header .slider__image {
     flex: 40%;
   }
 
@@ -81,7 +81,7 @@
     height: 250px;
   }
 
-  .w-md-100 {
+  .w-100Mb {
     width: 100%;
   }
 
@@ -124,6 +124,21 @@
     width: 100%;
   }
 
+  .car-card__title{
+    line-height: 1;
+  }
+  
+  .process-arc__box{
+    top: initial !important;
+    bottom: -10px !important;
+    right: 0px !important;
+  }
+
+  .progress-arc {
+    width: 100px;
+    height: 100px;
+  }
+
   .tech-pas {
     width: 30%;
   }
@@ -147,14 +162,51 @@
   .calc-btn button {
     width: 100%;
   }
+
+  .payment_method__item {
+    justify-content: center;
+  }
 }
 
+@media (max-width: 440px) {
+  .progress-arc {
+    width: 80px;
+    height: 80px;
+  }
+
+  .process-arc svg {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .process-arc__text {
+    top: 14px;
+    left: 17px;
+  }
+
+  .process-arc__text h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .process-arc__text h5 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+
 @media (max-width: 390px) {
-  header .nav__lng.dropdown {
+  .nav__lng.dropdown {
     display: none;
   }
 
   #navbar .nav__lng.dropdown {
     display: block !important;
+  }
+
+  .download_app__text .apps__item{
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
