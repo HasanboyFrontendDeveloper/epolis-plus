@@ -54,23 +54,22 @@ const partnersSwiper = new Swiper(".partners-swiper", {
   loop: true,
   grabCursor: true,
   autoplay: {
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-      delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+    delay: 3000,
   },
   breakpoints: {
-      // when window width is >= 320px
-      320: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-      },
-      // when window width is >= 576px
-      576: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-      }
-  }
-
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+  },
 });
 
 // Payment Method
@@ -104,21 +103,23 @@ calculatorBtns.forEach((item, index, allBtns) => {
 
 // Show Password toggle
 
-const showPasswodIcon = document.querySelector(".show-password");
-const showPasswodInput = document.querySelector('input[type="password"]');
+const showPasswodIcon = document.querySelectorAll(".show-password");
+
+let num;
 
 showPasswodIcon &&
-  showPasswodIcon.addEventListener("click", (e) => {
-    showPasswodInput.type =
-      showPasswodInput.type === "password" ? "text" : "password";
-
-    if (e.target.classList.value.includes("show-eye")) {
-      showPasswodIcon.classList.remove("show-eye");
-      showPasswodIcon.classList.add("hide-eye");
-    } else {
-      showPasswodIcon.classList.remove("hide-eye");
-      showPasswodIcon.classList.add("show-eye");
-    }
+  showPasswodIcon.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      if (num === 1) {
+        btn.className = "show-password show-eye";
+        btn.previousElementSibling.type = "password";
+        num = 0;
+      } else {
+        btn.className = "show-password hide-eye";
+        btn.previousElementSibling.type = "text";
+        num = 1;
+      }
+    });
   });
 
 if (document.getElementById("myHeader")) {
