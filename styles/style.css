@@ -220,7 +220,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: fit-content;
 }
 
-.max-w-full{
+.max-w-full {
   max-width: 100% !important;
 }
 
@@ -618,9 +618,14 @@ nav {
   outline-color: var(--outline-color);
 }
 
-.navbar__links .dropdown-toggle:focus,
-.navbar__links .dropdown-toggle:active {
+.dropdown-toggle {
+  border-color: transparent !important;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
   outline-color: var(--outline-color) !important ;
+  border-color: var(--outline-color) !important;
 }
 
 .language__list,
@@ -806,7 +811,7 @@ nav {
   max-width: max-content;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid white;
+  border: 1px solid transparent;
 }
 
 .calculator_btns__item:hover {
@@ -815,7 +820,7 @@ nav {
 
 .calculator_btns__item.active {
   background: white;
-  border: none;
+  border-color: transparent;
 
   box-shadow: 0px 0px 1px 0px #1118240d, 0px 0.75px 1px 0px #1118240a,
     0px 1.5px 1px 0px #11182408, 0px 2px 1px 0px #11182403,
@@ -824,7 +829,7 @@ nav {
 
 .calculator_btns__item.active:hover {
   background: var(--hover-white);
-  border: none;
+  border-color: transparent;
 }
 
 .calculator_btns__item.active path {
@@ -1002,7 +1007,6 @@ nav {
   padding-bottom: 22px;
 }
 
-
 .apps {
   display: flex;
   gap: 8px;
@@ -1021,7 +1025,7 @@ nav {
 /* About us section */
 
 .aboutUs {
-  margin: 64px auto;  
+  margin: 64px auto;
 }
 
 .aboutUs__left {
@@ -1052,7 +1056,7 @@ nav {
 
 .secondary_line {
   max-width: 36px;
-  width: 100% ;
+  width: 100%;
   height: 4px;
   background: var(--secondary-color);
   margin-top: 8px;
@@ -1088,7 +1092,6 @@ nav {
 }
 
 /* Partners section */
-
 
 .partners__link {
   color: var(--primary-color);
@@ -1351,59 +1354,59 @@ input[type="date"]::after {
   z-index: 10;
 }
 
-input[type="radio"] {
-  accent-color: var(--primary-color);
-  appearance: none;
-}
+  input[type="radio"] {
+    accent-color: var(--primary-color);
+    appearance: none;
+  }
 
-.radio-label {
-  padding-left: 30px;
-  position: relative;
-  margin-left: -9px;
-  cursor: pointer;
-}
+  .radio-label {
+    padding-left: 30px;
+    position: relative;
+    margin-left: -9px;
+    cursor: pointer;
+  }
 
-input[type="radio"]:checked ~ .radio-label {
-  color: var(--primary-color);
-}
+  input[type="radio"]:checked ~ .radio-label {
+    color: var(--primary-color);
+  }
 
-input[type="radio"]:checked ~ .radio-label:after {
-  background: var(--primary-color);
-  box-shadow: none;
-}
+  input[type="radio"]:checked ~ .radio-label:after {
+    background: var(--primary-color);
+    box-shadow: none;
+  }
 
-.radio-label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #efefef;
-  background: white;
-  box-shadow: 0 1px 1px 0 #00000008;
-  transition: all 0.3s ease;
-}
+  .radio-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #efefef;
+    background: white;
+    box-shadow: 0 1px 1px 0 #00000008;
+    transition: all 0.3s ease;
+  }
 
-input[type="radio"]:checked ~ .radio-label:before {
-  display: block;
-  top: 6px;
-  left: 6px;
-  border: 4px solid white;
-  z-index: 2;
-}
+  input[type="radio"]:checked ~ .radio-label:before {
+    display: block;
+    top: 6px;
+    left: 6px;
+    border: 4px solid white;
+    z-index: 2;
+  }
 
-.radio-label::before {
-  content: "";
-  display: none;
-  position: absolute;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  border: 6px solid white;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
+  .radio-label::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: 6px solid white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
 
 /* .form_input.invalid {
   outline: none;
@@ -1502,7 +1505,6 @@ input[type="radio"]:checked ~ .radio-label:before {
   justify-content: center;
   align-items: center;
   position: relative;
-  
 }
 
 .data-table-row .payment_method .payment_method__item {
@@ -1527,7 +1529,7 @@ input[type="radio"]:checked ~ .radio-label:before {
   position: absolute;
   left: 12px;
   top: 12px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .data-table-row .payment_method__item.selected .circle {
